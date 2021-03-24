@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <Head />
+      <router-view></router-view>
       <Foot />
     </v-main>
   </v-app>
