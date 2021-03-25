@@ -61,7 +61,7 @@
                  </v-card>
                </v-flex>
                <v-flex xs12 sm6 >
-                  <v-container class="">
+                  <v-container class="move">
                     <v-row><v-col><div class="demTechs">Demlinks Technology</div></v-col></v-row>
                      <v-row>
                       <v-col v-for=" (nav, index) in footnavs" :key="index" cols="4">
@@ -257,6 +257,7 @@ color: white;
    .quoteContent{
      padding-right: 0;
      margin-bottom: 4em;
+     /* margin-right: 1em; */
    }
    .contCard.v-card{
      width: 90%;
@@ -282,6 +283,9 @@ color: white;
      position: relative;
      top: 0.5em;
    }
+  .container.move{
+    margin: 0 auto;
+  }
  }
 
 </style>

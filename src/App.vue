@@ -1,9 +1,11 @@
 <template>
   <v-app>
     <v-main>
+      <div class="fill">
       <Head />
       <router-view></router-view>
       <Foot />
+      </div>
     </v-main>
   </v-app>
 </template>
@@ -23,3 +25,8 @@ export default {
   }),
 };
 </script>
+<style  scoped>
+.fill{
+  overflow: hidden;
+}
+</style>
