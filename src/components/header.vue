@@ -32,7 +32,7 @@
             disable-route-watcher
             overlay-color="#9B4C0E"
             right
-             v-model="dialog" width="60%" color="#FB8C00"> 
+             v-model="dialog" width="80%" color="#FB8C00"> 
              <div class="text-right pa-4"> <v-icon @click="dialog =!dialog" medium color="white">mdi-close</v-icon>
              </div>
              <v-list class="my-16">

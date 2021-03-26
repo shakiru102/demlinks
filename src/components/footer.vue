@@ -257,7 +257,7 @@ color: white;
    .quoteContent{
      padding-right: 0;
      margin-bottom: 4em;
-     /* margin-right: 1em; */
+     margin-right: 1em;
    }
    .contCard.v-card{
      width: 90%;
