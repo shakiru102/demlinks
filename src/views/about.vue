@@ -106,7 +106,7 @@ export default {
     min-height: 100vh;
 }
 .carousel-3d-container{
-  min-height: 500px ;
+  min-height: 100vh ;
 }
 .carousel-3d-slide{
   border: none;
@@ -147,6 +147,8 @@ export default {
 }
 .team_heads{
   margin-top: 10em;
+   margin-bottom: 5em;
+
 }
 .team_heads > .head_meet_teams {
    font-family: montserrat, sans-serif;
@@ -166,6 +168,9 @@ export default {
   .result_driven{
     margin-top: 1em;
   }
+  .carousel-3d-container{
+  min-height: 83vh ;
+}
   
 }
 @media screen and (max-width: 600px) {
