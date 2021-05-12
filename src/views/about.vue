@@ -1,0 +1,221 @@
+<template>
+  <div>
+    <v-img class="aboutImage" width="100%" src="@/assets/footer.png">
+        <div class="overlayParent">
+             <v-container class="">
+                <v-layout row wrap>
+                    <v-flex xs12 sm6>
+                        <div class="about_demlinks ">
+                            ABOUT DEMLINKS
+                        </div>
+                        <div class="result_driven">
+                            <div class="head">
+                                A result driven and lorem
+                            </div>
+                            <p class="content mt-5">
+                              We're a digital Agency passionate about developing responsive and elegant websites, brands and digital products
+                            </p>
+                        </div>
+                    </v-flex>
+                    <v-flex xs12 sm6>
+                        <v-img src="@/assets/undraw_personal_website_weap 1.png"></v-img>
+                    </v-flex>
+                </v-layout>
+              </v-container>
+        </div>
+    </v-img>
+    <div class="meet_team">
+       <div class="team_heads text-center">
+         <div class="head_meet_teams">Meet the <span class="TeamStyle" >Team</span></div>
+         <img src="@/assets/stroke.png" alt="">
+       </div>
+       <carousel-3d paginationActiveColor="#000000"
+        :autoplay="true">
+          <slide v-for="(doc, index) in images" :key="index" :index="index">
+              <img contain :src="require('@/assets/' + doc.img)" class="image" alt="">
+              <div class="imageContents text-center">
+                <div class="avatar_name">{{doc.name}}</div>
+                <div class="avatar_skills">{{ doc.skills }}</div>
+              </div>
+          </slide>
+     </carousel-3d>
+    </div>
+     <AboutTeam />
+     <AboutProcess />
+    <AboutGlance />
+     <AboutFooter /> 
+  </div>
+</template>
+
+<script>
+ import { Carousel3d, Slide } from 'vue-carousel-3d';
+ import AboutTeam from "@/components/aboutcomponents/aboutTeam"
+ import AboutGlance from "@/components/aboutcomponents/aboutGlance"
+ import AboutFooter from "@/components/aboutcomponents/aboutfooter"
+ import AboutProcess from "@/components/aboutcomponents/aboutprocess"
+
+export default {
+   components: {
+    Carousel3d,
+    Slide,
+    AboutTeam,
+    AboutGlance,
+    AboutFooter,
+    AboutProcess
+  },
+    data: () => ({
+        model: [1, 2, 3, 4, 5, 6],
+        images: [
+          { name:'John Tee', skills:'Team Lead, Tech and Design', img:'mand-holding-cup_1258-340.jpg'},
+          { name:'Kelvin Kurt', skills:'Team Lead, Tech and Design', img:'confident-business-team-with-leader_1098-3228.jpg'},
+          { name:'Jack Moris', skills:'Team Lead, Tech and Design', img:'blond-man-happy-expression_1194-2873.jpg'},
+          { name:'John Doe', skills:'Team Lead, Tech and Design', img:'young-businessman-siting-cafeteria-with-laptop-computer-table_342744-455.jpg'},
+          { name:'Danny Wright', skills:'Team Lead, Tech and Design', img: 'businessman-leader-modern-office-with-businesspeople-working_1139-961.jpg'}]
+    })
+
+}
+</script>
+
+<style scoped>
+.v-image.aboutImage{
+  height: 70vh;
+}
+.overlayParent{
+    background: linear-gradient( to right, #f2a839b4 , #f4733b7c);
+    color: white;
+    height: 100%;
+    font-family: montserrat, sans-serif;
+}
+.about_demlinks{
+    font-size: 1.2em;
+    text-shadow: 0px 3px 5px rgba(19, 18, 18, 0.295);
+    margin-top: 4em;
+}
+.result_driven{
+    margin-top: 4em;
+
+}
+.head{
+    font-size: 2.9em;
+}
+.content{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.meet_team{
+    min-height: 100vh;
+}
+.carousel-3d-container{
+  min-height: 500px ;
+}
+.carousel-3d-slide{
+  border: none;
+  border-radius: 30px;
+  max-width: 316px;
+  min-height: 500px;
+  background: white;
+}
+.imageContents > .avatar_name{
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #f2a839;
+}
+.carousel-3d-slide > img{
+  width: 100%;
+  height: 371px;
+  opacity: 0.7;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 3px 10px  rgba(19, 18, 18, 0.404);
+}
+.carousel-3d-slide > .imageContents{
+  opacity: 0;
+}
+.carousel-3d-slide.current{
+  max-width: 361px;
+
+}
+.carousel-3d-slide.current > img{
+  opacity: 1;
+  height: 424px;
+
+}
+.carousel-3d-slide.current > .imageContents{
+  opacity: 1;
+  margin-top: 1em;
+  font-family: montserrat, sans-serif;
+}
+.team_heads{
+  margin-top: 10em;
+}
+.team_heads > .head_meet_teams {
+   font-family: montserrat, sans-serif;
+   font-size: 2.5em;
+   font-weight: 500;
+}
+.TeamStyle{
+  color: #f2a839;
+}
+@media screen and (max-width: 800px) {
+  .v-image.aboutImage{
+    height: 50vh;
+  }
+  .overlayParent{
+    padding-left: 1.5em;
+  }
+  .result_driven{
+    margin-top: 1em;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .v-image.aboutImage{
+    height: 100vh;
+  }
+  .overlayParent{
+    padding-left: 1em;
+  }
+  .about_demlinks{
+    font-size: 1em;
+  }
+  .result_driven{
+    margin-top: 1em;
+  }
+  .result_driven .head{
+    font-size: 2em;
+  }
+  .result_driven .content{
+    font-size: 1em;
+  }
+  .team_heads > .head_meet_teams{
+    font-size: 1.8em;
+  }
+  .carousel-3d-slide{
+    max-width: 200px;
+    margin: auto 3em;
+
+  }
+  .carousel-3d-slide > img{
+  height: 250px;
+
+  }
+  .carousel-3d-slide.current{
+    max-width: 250px;
+    margin: auto 3em;
+  }
+  .carousel-3d-slide.current > img{
+  height: 300px;
+
+  }
+
+  .imageContents > .avatar_name{
+    font-size: 1.1em;
+  }
+  .imageContents > .avatar_skills{
+    font-size: 0.8em;
+  }
+}
+/* .heads > .line{
+  background: ;
+} */
+</style>

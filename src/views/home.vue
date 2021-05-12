@@ -1,12 +1,16 @@
 <template>
   <div>
-      
+     <Foot /> 
   </div>
 </template>
 
 <script>
-export default {
+import Foot from '@/components/footer'
 
+export default {
+ components: {
+   Foot
+ }
 }
 </script>
 

@@ -53,7 +53,7 @@
 export default {
     data: ()=>({
     dialog: false,
-    navs: [{name:'Home', link:'/'}, {name:'About Us', link:'/'}, {name:'Services', link:'/'}, {name:'Portfolio', link:'/'}, {name:'Contact', link:'/'}]
+    navs: [{name:'Home', link:'/'}, {name:'About Us', link:'/about'}, {name:'Services', link:'/'}, {name:'Portfolio', link:'/'}, {name:'Contact', link:'/'}]
     })
 
 }
