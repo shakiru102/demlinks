@@ -29,7 +29,9 @@
          <div class="head_meet_teams">Meet the <span class="TeamStyle" >Team</span></div>
          <img src="@/assets/stroke.png" alt="">
        </div>
-       <carousel-3d paginationActiveColor="#000000"
+       <carousel-3d 
+       class="adjustable"
+       :adjustableHeight="true"
         :autoplay="true">
           <slide v-for="(doc, index) in images" :key="index" :index="index">
               <img contain :src="require('@/assets/' + doc.img)" class="image" alt="">
@@ -106,18 +108,18 @@ export default {
     min-height: 100vh;
 }
 /* .carousel-3d-container{
-  min-height: 100vh ;
+  min-height: 500px ;
+  border: solid 2px black;
 } */
+
 .carousel-3d-slide{
   border: none;
   border-radius: 30px;
-  /* max-width: 316px;
-  min-height: 500px; */
   background: white;
 }
 .imageContents > .avatar_name{
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #f2a839;
 }
 .carousel-3d-slide > img{
@@ -142,6 +144,7 @@ export default {
 }
 .carousel-3d-slide.current > .imageContents{
   opacity: 1;
+  
   /* margin-top: 1em; */
   font-family: montserrat, sans-serif;
 }
@@ -195,26 +198,21 @@ export default {
   .team_heads > .head_meet_teams{
     font-size: 1.8em;
   }
-  /* .carousel-3d-slide{
+  .carousel-3d-slide{
     max-width: 200px;
     margin: auto 3em;
 
-  } */
+  }
   .carousel-3d-slide > img{
   height: 70%;
 
   }
-  /* .carousel-3d-slide.current{
-    max-width: 250px;
-    margin: auto 3em;
-  } */
-  /* .carousel-3d-slide.current > img{
-  height: 300px;
-
-  } */
-
+  .carousel-3d-slide.current{
+    
+    margin: auto 3.6em;
+  }
   .imageContents > .avatar_name{
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .imageContents > .avatar_skills{
     font-size: 0.8em;

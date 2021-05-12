@@ -18,7 +18,7 @@
                  </div>
                  <v-card-text>
                      <v-container class="textContents ">
-                         <v-layout row wrap>
+                         <v-layout row wrap justify-center>
                              <v-flex xs12>
                              <div class="mb-5">
                                  We have been working on variety of projects accross different industries, making our work as appropriate, versatile and functional response to the needs of our client. Our capabilities cover the following areas;
@@ -93,7 +93,7 @@ export default {
       { name:'mdi-facebook', link:''},
       { name:'mdi-twitter', link:''}
     ],
-    services: ['Frontend development', 'Backend development', 'Frontend development', 'Brand identity', 'Useer experience design', 'Business Branding', 'Remote video monitoring', 'Home automation', 'User interface design']
+    services: ['Frontend development', 'Backend development', 'Software development', 'Brand identity', 'Useer experience design', 'Business Branding', 'Remote video monitoring', 'Home automation', 'User interface design']
   })
 
 }

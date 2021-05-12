@@ -24,8 +24,8 @@
                                   <v-img class="imgs" src="@/assets/ri_team-fill.png"></v-img>
                               </v-col>
                               <v-col cols="9">
-                                  <div class="galance-header">Founded in 2021</div>
-                                  <div class="galance-content">We are a start-up focused on developing your brand</div>
+                                  <div class="galance-header">Team of 8 people</div>
+                                  <div class="galance-content">We are full time and ready to grow your buisness.</div>
                               </v-col>
                           </v-row>
                       </v-col>
@@ -35,8 +35,8 @@
                                   <v-img class="imgs" src="@/assets/ant-design_safety-certificate-filled.png"></v-img>
                               </v-col>
                               <v-col cols="9">
-                                  <div class="galance-header">Founded in 2021</div>
-                                  <div class="galance-content">We are a start-up focused on developing your brand</div>
+                                  <div class="galance-header">Certified Personnels</div>
+                                  <div class="galance-content">our team consist of developers and marketers certified by google.</div>
                               </v-col>
                           </v-row>
                       </v-col>
@@ -46,8 +46,8 @@
                                   <v-img class="imgs"  src="@/assets/el_idea-alt.png"></v-img>
                               </v-col>
                               <v-col cols="9">
-                                  <div class="galance-header">Founded in 2021</div>
-                                  <div class="galance-content">We are a start-up focused on developing your brand</div>
+                                  <div class="galance-header">Our Goal</div>
+                                  <div class="galance-content">All that matters is achieving the best result.</div>
                               </v-col>
                           </v-row>
                       </v-col>
