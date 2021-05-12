@@ -200,17 +200,14 @@ export default {
   }
   .carousel-3d-slide{
     max-width: 200px;
-    margin: auto 3em;
+    margin: auto 5em;
 
   }
   .carousel-3d-slide > img{
   height: 70%;
 
   }
-  .carousel-3d-slide.current{
-    
-    margin: auto 3.6em;
-  }
+
   .imageContents > .avatar_name{
     font-size: 1em;
   }
