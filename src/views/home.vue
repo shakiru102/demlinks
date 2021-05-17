@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="homeimg hidden-xs-only">
+    <div class="homeimg hidden-sm-and-down">
       <v-img height="100%" src="@/assets/hero div.png">
      <v-container class="">
         <v-layout row wrap>
