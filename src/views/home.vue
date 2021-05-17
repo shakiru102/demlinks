@@ -204,7 +204,7 @@
               :paginationSize="20"
               paginationActiveColor="#F2A839"
             >
-              <Slide v-for="(n, index) in 3" :key="index">
+              <Slide v-for="(doc, index) in testimonials" :key="index">
                 <v-card
                 tile
                 class="carousel-card"
@@ -212,7 +212,7 @@
                  <v-container class="">
                    <v-layout row wrap>
                      <v-flex xs12 sm6 >
-                        <v-img class="img"  src="@/assets/testimony.25c72e7a.svg"></v-img>
+                        <v-img class="img"  :src="require('@/assets/' + doc.image)"></v-img>
                      </v-flex>
                      <v-flex xs12 sm6 >
                        <v-card-text class="my-16">
@@ -221,16 +221,16 @@
                              <v-img contain src="@/assets/upper quotation.png"></v-img>
                            </v-col>
                            <v-col cols="10">
-                             <p class="carousel-card-text">They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website
+                             <p class="carousel-card-text">{{doc.testimonial}}
                          </p>
                            </v-col>
                          </v-row>
                          <v-row>
                            <v-col cols="10">
                           <div class="cards-title">
-                           John Tee
+                           {{doc.name}}
                          </div>
-                         <div class="cards-text">CEO, Frit Publications</div>
+                         <div class="cards-text">{{ doc.info }}</div>
                            </v-col>
                            <v-col cols="2">
                              <v-img src="@/assets/lower quotation.png"></v-img>
@@ -262,7 +262,12 @@ export default {
  data:() => ({
    colors: '#9B4C0E',
    heights: '40px',
-   widths: '130px'
+   widths: '130px',
+   testimonials: [
+     {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'},
+     {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'},
+     {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'}
+   ]
  })
 }
 </script>
