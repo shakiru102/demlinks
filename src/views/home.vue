@@ -597,7 +597,7 @@ line-height: 30px;
     font-size: 1em;
     line-height: 1.8em;
     padding: 1em;
-    font-weight: 100;
+    font-weight: 200;
   }
   .card-content-two{
     font-size: 1em;
