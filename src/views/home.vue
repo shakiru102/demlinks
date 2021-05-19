@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="homeimg hidden-sm-and-down">
+    <div class="homeimg">
       <v-img height="100%" src="@/assets/hero div.png">
      <v-container class="">
         <v-layout row wrap>
@@ -299,7 +299,7 @@ background: #9B4C0E;
 border-radius: 19px;
 color: white;
 text-transform: lowercase;
-margin-top: 3em;
+margin: 3em 0;
 font-family: montserrat, sans-serif;
 }
 .v-image.images{
@@ -493,6 +493,9 @@ font-size: 18px;
 line-height: 30px;
 }
 @media screen and (max-width: 800px) {
+  .homeimg{
+  height: 60vh;
+}
 .amet{
   font-size: 30px;
   padding-left: 2em;
@@ -566,6 +569,26 @@ line-height: 30px;
 }
 
 @media screen and (max-width: 600px) {
+  .homeimg{
+  height: 102vh;
+}
+.v-image.images{
+  top: 2em;
+  width: 70%;
+  margin: auto;
+}
+.amet{
+ margin-top: 1em;
+ padding-left: 1em;
+
+}
+.amet-cont{
+ padding-left: 1em;
+
+}
+.big-btn{
+ margin-left: 1em; /* margin: 3em 6.5em; */
+}
   .headOne{
     font-size: 1.8em;
   }
