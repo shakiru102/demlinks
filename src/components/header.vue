@@ -1,6 +1,6 @@
 <template>
    <div>
-         <v-app-bar class="nav" height="60px"   dark>
+         <v-app-bar app class="nav" height="60px"   dark>
               <v-toolbar-title class="logo">
                    <v-container class="">
                       <v-row>
