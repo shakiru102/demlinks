@@ -611,7 +611,7 @@ line-height: 30px;
   .homeimg{
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: white;
   z-index: 1 ;
   top: 0;
@@ -626,21 +626,6 @@ line-height: 30px;
   transition: 0.5s ease-in-out all;
 }
 
-/* .homeimg.show{
-  width: 100%;
-  position: absolute;
-  top: -1%;
-  transition: 0.8s ease-in-out all;
-}
-
-@keyframes others {
-  from{
-    transform: translateY(100%);
-  }to{
-    transform: translateY(0);
-  }
-  
-} */
 .imgline{
   width: 99px;
   position: relative;
