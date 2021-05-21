@@ -11,7 +11,8 @@
             <div class="amet-cont">
               Lorem ipsum dolor sit, amet coerendis ad ea exercitationem, quia soluta quasi ducimus officia non, accusamus itaque aut reprehenderit accusantium atque.
             </div>
-                <v-btn width="180px" height="50px"  class="big-btn" color="#9B4C0E">select a service</v-btn>
+                <v-btn width="180px" height="50px"  class="big-btn hidden-xs-only" color="#9B4C0E">select a service</v-btn>
+                 <v-btn width="140px" height="38.89px"  class="big-btn  hidden-sm-and-up" color="#9B4C0E">select a service</v-btn>
             </v-flex>
           <v-flex xs12 sm6>
             <v-img  
@@ -30,14 +31,14 @@
             <div class="headOne text-center ">
               Our <span class="headTwo">Story</span>
             </div>
-            <div class="text-center pt-3">
+            <div class="text-center">
               <img src="@/assets/stroke.png" alt="">
             </div>
           </v-flex>
           <v-flex xs12 sm6>
             <v-card
              class="ourstory-img" >
-              <v-img height="300px" src="@/assets/our-story.png"></v-img>
+              <v-img  src="@/assets/our-story.png"></v-img>
             </v-card>
           </v-flex>
           <v-flex xs12 sm6>
@@ -76,7 +77,7 @@
       </v-container>
         <div class="headOne move text-center">
               What <span class="headTwo">We Offer</span>
-            <div class="text-center pt-3">
+            <div class="text-center ">
               <img src="@/assets/stroke.png" alt="">
             </div>
             </div>
@@ -139,7 +140,7 @@
                 </v-card>
               </v-flex>
               <v-flex xs12 sm6>
-                <div class="card-title">Web Design & Development</div>
+                <div class="card-title">Home Automation</div>
                 <div class="card-content">
                   We are profient in designing world class website to suit your business and taste. we also manage your website to become the most displayed when anything related to what you donig being searched for.
                 </div>
@@ -181,14 +182,15 @@
               <div class="card-title-more">
                 Want to know more about our services?
               </div>
-                  <v-btn width="200px" height="70px"  class="btn" :color="colors">Explore</v-btn>
+                  <v-btn width="200px" height="70px"  class="btn hidden-xs-only" :color="colors">Explore</v-btn>
+                  <v-btn width="130px" height="40px" class="btn hidden-sm-and-up" :color="colors">Explore</v-btn>
             </v-flex>
           </v-layout>
         </v-container>
       </div>
       <div class="headOne  text-center">
               Testim<span class="headTwo">onials</span>
-            <div class="text-center pt-3">
+            <div class="text-center">
               <img src="@/assets/stroke.png" alt="">
             </div>
             </div>
@@ -215,7 +217,7 @@
                         <v-img class="img"  :src="require('@/assets/' + doc.image)"></v-img>
                      </v-flex>
                      <v-flex xs12 sm6 >
-                       <v-card-text class="my-16">
+                       <v-card-text class="testimonal-text">
                          <v-row>
                            <v-col cols="2">
                              <v-img contain src="@/assets/upper quotation.png"></v-img>
@@ -251,12 +253,14 @@
 <script>
 import Foot from '@/components/footer'
 import { Carousel, Slide } from 'vue-carousel';
+import { bus } from '../main'
+
 
 export default {
  components: {
    Foot,
    Carousel,
-    Slide
+    Slide,
 
  },
  data:() => ({
@@ -267,8 +271,12 @@ export default {
      {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'},
      {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'},
      {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'}
-   ]
- })
+   ],
+   compName: 'Home'
+ }),
+ mounted () {
+     bus.$emit('changeClass', this.compName)
+ }
 }
 </script>
 
@@ -492,6 +500,9 @@ font-weight: 300;
 font-size: 18px;
 line-height: 30px;
 }
+.testimonal-text{
+  margin: 5em 0 ;
+}
 @media screen and (max-width: 800px) {
   .homeimg{
   height: 60vh;
@@ -573,50 +584,60 @@ line-height: 30px;
   height: 102vh;
 }
 .v-image.images{
-  top: 2em;
-  width: 70%;
+  top: 42px;
+  width: 300px;
+height: 200px;
+left: -2.5px;
   margin: auto;
 }
 .amet{
  margin-top: 1em;
- padding-left: 1em;
-
+ padding-left: 32px;
+font-size: 33px;
 }
 .amet-cont{
  padding-left: 1em;
+ font-size: 15px;
 
 }
 .big-btn{
- margin-left: 1em; /* margin: 3em 6.5em; */
+ margin-left: 1em; 
+ font-size: 12px;/* margin: 3em 6.5em; */
 }
   .headOne{
     font-size: 1.8em;
   }
  .v-card.ourstory-img{
-    width: 290px;
-    height: 100px;
+    width: 307px;
+    height: 202px;
     margin: auto;
     margin-bottom: 15em;
-    margin-top: 5em;
+    margin-top: 58px;
+    box-shadow: 0px 0px 0px white;
   }
   .story-cont,.card-title,.card-content,.card-content-two,.card-title-two{
     text-align: center;
   }
   .story-cont{
-    font-size: 0.8em;
+    font-weight: 260;
+    font-size: 0.9em;
     padding:  1em;
     margin-bottom: 0;
-    margin-top: 2em;
+    margin-top: -170px;
+    padding-top: 0;
   }
   .v-card.mission-vision{
-    width: 85%;
+    width: 250px;
+  height: 132px;
+  margin: 2em auto;
   }
   .mission-vision-head{
-    font-size: 1.5em;
-    margin-top: 1em;
+    font-size: 18px;
+    /* margin-top: 1em; */
   }
   .mission-vision-content{
-    font-size: 1.2em;
+    font-weight: 300;
+    font-size: 15px;
   }
   .card-title,.card-title-two{
     font-size: 1.2em;
@@ -633,12 +654,35 @@ line-height: 30px;
     padding: 1em;
     font-weight: 200;
   }
+  .VueCarousel-slide{
+  height: 460px;
+}
   .v-card.carousel-card{
-    width: 90%;
-    height: auto;
+    width: 349px;
+    height: 450px;
   }
   .small-btn{
     margin-left: 4em;
+  }
+  .v-image.img{
+    width: 253px;
+  height: 173px;
+  margin: 0 ;
+  }
+  .testimonal-text{
+    margin: 0;
+  }
+  .btn{
+    font-size: 15px;
+    margin-bottom: 2em;
+  }
+  .v-card.card-left{
+    width: 189.15px;
+  height: 202.79px;
+  }
+  .v-card.card-right{
+    width: 176.15px;
+  height: 187.76px;
   }
   }
 </style>

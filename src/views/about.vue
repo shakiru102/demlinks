@@ -50,11 +50,13 @@
 </template>
 
 <script>
+import { bus } from '../main'
  import { Carousel3d, Slide } from 'vue-carousel-3d';
  import AboutTeam from "@/components/aboutcomponents/aboutTeam"
  import AboutGlance from "@/components/aboutcomponents/aboutGlance"
  import AboutFooter from "@/components/aboutcomponents/aboutfooter"
  import AboutProcess from "@/components/aboutcomponents/aboutprocess"
+ 
 
 export default {
    components: {
@@ -67,13 +69,17 @@ export default {
   },
     data: () => ({
         model: [1, 2, 3, 4, 5, 6],
+        compName: 'About Us',
         images: [
           { name:'John Tee', skills:'Team Lead, Tech and Design', img:'mand-holding-cup_1258-340.jpg'},
           { name:'Kelvin Kurt', skills:'Team Lead, Tech and Design', img:'confident-business-team-with-leader_1098-3228.jpg'},
           { name:'Jack Moris', skills:'Team Lead, Tech and Design', img:'blond-man-happy-expression_1194-2873.jpg'},
           { name:'John Doe', skills:'Team Lead, Tech and Design', img:'young-businessman-siting-cafeteria-with-laptop-computer-table_342744-455.jpg'},
           { name:'Danny Wright', skills:'Team Lead, Tech and Design', img: 'businessman-leader-modern-office-with-businesspeople-working_1139-961.jpg'}]
-    })
+    }),
+    mounted () {
+     bus.$emit('changeClass', this.compName)
+ }
 
 }
 </script>
@@ -104,13 +110,8 @@ export default {
     font-size: 1.2em;
     font-weight: 300;
 }
-.meet_team{
-    min-height: 100vh;
-}
-/* .carousel-3d-container{
-  min-height: 500px ;
-  border: solid 2px black;
-} */
+
+
 
 .carousel-3d-slide{
   border: none;
@@ -198,6 +199,9 @@ export default {
   .team_heads > .head_meet_teams{
     font-size: 1.8em;
   }
+  .carousel-3d-container{
+  min-height: 100% ;
+}
   .carousel-3d-slide{
     max-width: 200px;
     margin: auto 5em;

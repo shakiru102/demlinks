@@ -21,7 +21,7 @@
               <div class="cont hidden-sm-and-down">
                      <a 
                     v-for="(nav, index) in navs" :key="index" 
-                     class="btn "
+                     :class="{btn: 'btn', onpage: nav.onpage }"
                     :href="nav.link">{{nav.name}}</a>
               </div>
               <!-- <v-spacer></v-spacer> -->
@@ -36,10 +36,10 @@
              <div class="text-right pa-4"> <v-icon @click="dialog =!dialog" medium color="white">mdi-close</v-icon>
              </div>
              <v-list class="my-16">
-                 <v-list-item class="act" :href="nav.link" v-for="(nav, index) in navs" :key="index" >
+                 <v-list-item :class="{act: 'act', onpage: nav.onpage}" :href="nav.link" v-for="(nav, index) in navs" :key="index" >
                      <v-list-item-content>
                          <v-list-item-subtitle class="text-center">
-                             <span class="mobileNavs">{{nav.name}}</span>
+                             <span :class="{mobileNavs: 'mobileNavs', onpage: nav.onpage}">{{nav.name}}</span>
                          </v-list-item-subtitle>
                      </v-list-item-content>
                  </v-list-item>
@@ -50,11 +50,19 @@
 </template>
 
 <script>
+import { bus } from '../main'
 export default {
     data: ()=>({
     dialog: false,
-    navs: [{name:'Home', link:'/'}, {name:'About Us', link:'/about'}, {name:'Services', link:'/'}, {name:'Portfolio', link:'/'}, {name:'Contact', link:'/'}]
-    })
+    navs: [{onpage: false,name:'Home', link:'/'}, {onpage: false,name:'About Us', link:'/about'}, {onpage: false,name:'Services', link:'/services'}, {onpage: false,name:'Portfolio', link:'/portfolio'}, {onpage: false,name:'Contact', link:'/contact'}]
+    }),
+    mounted(){
+        bus.$on('changeClass', (data) => {
+            const indexs = this.navs.findIndex(doc => doc.name === data)
+            this.navs[indexs].onpage = true
+            console.log(indexs)
+        })
+    }
 
 }
 </script>
@@ -84,10 +92,18 @@ header.nav.v-sheet{
     /* margin: 0 2em; */
 }
 
-.btn:active{
+.btn.onpage{
+     outline: none;
+    display: inline-block;
+    height: 30px;
+    width: auto;
+      text-decoration: none;
+    font-family: poppins;
     border-bottom: solid 2px white;
     color: #9B4C0E;
     font-weight: 500;
+    transition: all 0.1s ; 
+
 }
 
 .v-avatar.avat{
@@ -112,12 +128,15 @@ a.act.v-list-item .v-list-item__content .v-list-item__subtitle .mobileNavs{
     padding-bottom: 0.5em;
     transition: all 0.3s;
 }
-a.act.v-list-item:active .v-list-item__content .v-list-item__subtitle .mobileNavs{
+a.act.v-list-item .v-list-item__content .v-list-item__subtitle .mobileNavs.onpage{
     color: black;
     font-family: poppins;
     border-bottom: solid 2px white;
 }
+a.act.onpage.v-list-item{
+    background:  rgba(155, 75, 14, 0.268);
 
+}
 
 
 @media screen and (max-width: 800px) {

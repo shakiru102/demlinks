@@ -119,7 +119,8 @@ ul > li.list::before{
    font-weight: 500;
 }
 .texts{
-    font-size: 18px;
+    font-size: 15px;
+    font-family: poppins;
 }
 @media screen and (max-width: 800px) {
     .process{
@@ -137,6 +138,9 @@ ul > li.list::before{
     
 
 }
+.processCard .processInner{
+    padding-top: 2.7em;
+}
 }
 @media screen and (max-width: 600px) {
     .team_heads > .head_meet_teams{
@@ -148,14 +152,14 @@ ul > li.list::before{
     padding-left: 2em;
 }
 .process{
-    min-height: 150vh;
+    min-height: 120vh;
 }
 .processCard{
     position: relative;
-    top: 7em;
-    left: 1.1em;
-    width: 148px;
-    height: 210px;
+    top: 0;
+    left: 0.8em;
+    width: 156.12px;
+    height: 153.38px;
     background: rgba(155, 76, 14, 0.1);
     border-radius: 27px;
     z-index: 1;
@@ -165,12 +169,12 @@ ul > li.list::before{
 
 }
 .processCard .processInner{
-    height: 108px;
+    height: 57.72px;
     background: #9B4C0E;
-    border-top-right-radius: 14px;
-    border-top-left-radius: 14px;
+    border-top-right-radius: 27px;
+    border-top-left-radius: 27px;
     text-align: center;
-    padding-top: 4em;
+    padding-top: 2.5em;
     color: white;
     font-weight: 500;
     font-size: 0.8em;
@@ -181,10 +185,10 @@ ul > li.list::before{
     display: inline-block;
     position: absolute;
     z-index: 1000;
-   width: 70px;
-height: 70px;
-left: 28%;
-top: -2.5em;
+   width: 54.42px;
+height: 54.42px;
+left: 35%;
+top: -2em;
 border: 3px solid white;
 border-radius: 50%;
 background: #F9B620;

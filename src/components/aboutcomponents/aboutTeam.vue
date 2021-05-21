@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="mb-10">
+      <div class="mb-10 mt-16">
       <div class=" content_head">
             What's different when you work with us?
       </div>
