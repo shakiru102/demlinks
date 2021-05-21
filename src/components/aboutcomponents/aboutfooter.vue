@@ -93,7 +93,7 @@ export default {
       { name:'mdi-facebook', link:''},
       { name:'mdi-twitter', link:''}
     ],
-    services: ['Frontend development', 'Backend development', 'Software development', 'Brand identity', 'Useer experience design', 'Business Branding', 'Remote video monitoring', 'Home automation', 'User interface design']
+    services: ['Frontend development', 'Backend development', 'Software development', 'Brand identity', 'User experience design', 'Business Branding', 'Remote video monitoring', 'Home automation', 'User interface design']
   })
 
 }
