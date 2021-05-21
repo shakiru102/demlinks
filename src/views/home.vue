@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="homeimg">
-      <v-img height="100%" src="@/assets/hero div.png">
+    <div v-if="reveal" class="homeimg">
+      <div>
      <v-container class="">
         <v-layout row wrap>
           <v-flex xs12 sm6>
@@ -15,16 +15,18 @@
                  <v-btn width="140px" height="38.89px"  class="big-btn  hidden-sm-and-up" color="#9B4C0E">select a service</v-btn>
             </v-flex>
           <v-flex xs12 sm6>
-            <v-img  
-            
-          class="images"
+            <v-img  class="images"
             :src="require('@/assets/hero-image.jpeg')" ></v-img>
+          </v-flex>
+          <v-flex xs12 class="hidden-sm-and-up text-center" >
+            <v-img @click="handleAnime" class="imgbtn" height="30px" width="26.5px"  contain src="@/assets/scroll.png"></v-img>
+            
           </v-flex>
         </v-layout>
       </v-container>
-    </v-img>
     </div>
-    
+    </div>
+    <div class="others" >
      <v-container class="mt-16">
         <v-layout row wrap>
            <v-flex xs12>
@@ -32,7 +34,7 @@
               Our <span class="headTwo">Story</span>
             </div>
             <div class="text-center">
-              <img src="@/assets/stroke.png" alt="">
+              <img  class="imgline" src="@/assets/stroke.png" alt="">
             </div>
           </v-flex>
           <v-flex xs12 sm6>
@@ -78,7 +80,7 @@
         <div class="headOne move text-center">
               What <span class="headTwo">We Offer</span>
             <div class="text-center ">
-              <img src="@/assets/stroke.png" alt="">
+              <img class="imgline" src="@/assets/stroke.png" alt="">
             </div>
             </div>
 
@@ -191,7 +193,7 @@
       <div class="headOne  text-center">
               Testim<span class="headTwo">onials</span>
             <div class="text-center">
-              <img src="@/assets/stroke.png" alt="">
+              <img class="imgline" src="@/assets/stroke.png" alt="">
             </div>
             </div>
             <div class="my-16">
@@ -247,6 +249,7 @@
             </Carousel>
             </div>
      <Foot /> 
+    </div>
   </div>
 </template>
 
@@ -254,6 +257,7 @@
 import Foot from '@/components/footer'
 import { Carousel, Slide } from 'vue-carousel';
 import { bus } from '../main'
+import { gsap } from 'gsap'
 
 
 export default {
@@ -264,6 +268,7 @@ export default {
 
  },
  data:() => ({
+   reveal: true,
    colors: '#9B4C0E',
    heights: '40px',
    widths: '130px',
@@ -275,15 +280,38 @@ export default {
    compName: 'Home'
  }),
  mounted () {
+   if(screen.width > 600){
+     this.reveal = true
+   }
      bus.$emit('changeClass', this.compName)
+     gsap.to('.imgbtn', { y: -10,autoAlpha: 0.4 , repeat: -1, yoyo: true, ease:'power' })
+     
+ },
+ methods: {
+   handleAnime(){
+     gsap.to('.homeimg', {  yPercent: -100, opacity: 0,   ease: 'power'  })
+     setTimeout(()=>{
+     this.reveal = !this.reveal
+     }, 2000 )
+   }
  }
 }
 </script>
 
 <style scoped>
+.v-image.imgbtn{
+  margin: 4em auto;
+}
 .homeimg{
   height: 100vh;
+  transition: 0.8s ease-in-out all;
+  background: url('../assets/hero div.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
+
 .amet{
   font-size: 45px;
   font-weight: 500;
@@ -307,7 +335,7 @@ background: #9B4C0E;
 border-radius: 19px;
 color: white;
 text-transform: lowercase;
-margin: 3em 0;
+margin: 2em 0;
 font-family: montserrat, sans-serif;
 }
 .v-image.images{
@@ -581,28 +609,64 @@ line-height: 30px;
 
 @media screen and (max-width: 600px) {
   .homeimg{
-  height: 102vh;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1 ;
+  top: 0;
+  /* transition: 0.8s ease-in-out all; */
+  background-image: url('../assets/Vector 1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.others{
+ position: relative; 
+  transition: 0.5s ease-in-out all;
+}
+
+/* .homeimg.show{
+  width: 100%;
+  position: absolute;
+  top: -1%;
+  transition: 0.8s ease-in-out all;
+}
+
+@keyframes others {
+  from{
+    transform: translateY(100%);
+  }to{
+    transform: translateY(0);
+  }
+  
+} */
+.imgline{
+  width: 99px;
+  position: relative;
+  top: -0.5em;
 }
 .v-image.images{
-  top: 42px;
+  top: 25px;
   width: 300px;
 height: 200px;
 left: -2.5px;
   margin: auto;
 }
 .amet{
- margin-top: 1em;
- padding-left: 32px;
-font-size: 33px;
+ margin-top: 2em;
+ padding-left: 20px;
+font-size: 25px;
 }
 .amet-cont{
- padding-left: 1em;
- font-size: 15px;
+ padding-left: 20px;
+ font-size: 13px;
 
 }
 .big-btn{
  margin-left: 1em; 
- font-size: 12px;/* margin: 3em 6.5em; */
+ margin-top: 4em; 
+ font-size: 12px;
 }
   .headOne{
     font-size: 1.8em;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-img class="aboutImage" width="100%" src="@/assets/footer.png">
+    <div class="aboutImage">
         <div class="overlayParent">
              <v-container class="">
                 <v-layout row wrap>
@@ -23,7 +23,7 @@
                 </v-layout>
               </v-container>
         </div>
-    </v-img>
+    </div>
     <div class="meet_team">
        <div class="team_heads text-center">
          <div class="head_meet_teams">Meet the <span class="TeamStyle" >Team</span></div>
@@ -85,8 +85,12 @@ export default {
 </script>
 
 <style scoped>
-.v-image.aboutImage{
+.aboutImage{
   height: 70vh;
+    background-image: url('../assets/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .overlayParent{
     background: linear-gradient( to right, #f2a839b4 , #f4733b7c);
@@ -163,7 +167,7 @@ export default {
   color: #f2a839;
 }
 @media screen and (max-width: 800px) {
-  .v-image.aboutImage{
+ .aboutImage{
     height: 50vh;
   }
   .overlayParent{
@@ -175,14 +179,22 @@ export default {
   .carousel-3d-container{
   min-height: 83vh ;
 }
+.carousel-3d-container{
+  min-height: 100% ;
+}
   
 }
 @media screen and (max-width: 600px) {
-  .v-image.aboutImage{
+  .aboutImage{
     height: 100vh;
+      background-image: url('../assets/other.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
   .overlayParent{
     padding-left: 1em;
+    height: 94vh;
   }
   .about_demlinks{
     font-size: 1em;

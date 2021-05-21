@@ -1,6 +1,6 @@
 <template>
    <div>
-         <v-app-bar app class="nav" height="60px"   dark>
+         <v-app-bar flat class="nav" height="60px"   dark>
               <v-toolbar-title class="logo">
                    <v-container class="">
                       <v-row>
@@ -70,6 +70,8 @@ export default {
 <style scoped>
 header.nav.v-sheet{
     background:linear-gradient( to right, #F2A839 , #F4743B);
+    /* z-index: 1000; */
+    /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
 }
 .cont{
     width: 50%;
