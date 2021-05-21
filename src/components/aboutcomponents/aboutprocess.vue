@@ -6,7 +6,7 @@
                   <v-flex xs12 >
                      <div class="team_heads text-center">
                         <div class="head_meet_teams">Our <span class="TeamStyle" >Process</span></div>
-                        <img src="@/assets/stroke.png" alt="">
+                        <img class="imgline" src="@/assets/stroke.png" alt="">
                         <div class="texts mt-7" >We take ideas and change them to products that generate revenue and expand your brand.</div>
                      </div>
                   </v-flex>
@@ -143,6 +143,11 @@ ul > li.list::before{
 }
 }
 @media screen and (max-width: 600px) {
+    .imgline{
+  width: 99px;
+  position: relative;
+  top: -0.5em;
+}
     .team_heads > .head_meet_teams{
     font-size: 1.8em;
   }

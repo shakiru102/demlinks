@@ -27,7 +27,7 @@
     <div class="meet_team">
        <div class="team_heads text-center">
          <div class="head_meet_teams">Meet the <span class="TeamStyle" >Team</span></div>
-         <img src="@/assets/stroke.png" alt="">
+         <img class="imgline" src="@/assets/stroke.png" alt="">
        </div>
        <carousel-3d 
        class="adjustable"
@@ -138,19 +138,13 @@ export default {
 .carousel-3d-slide > .imageContents{
   opacity: 0;
 }
-/* .carousel-3d-slide.current{
-  max-width: 361px;
 
-} */
 .carousel-3d-slide.current > img{
   opacity: 1;
-  /* height: 424px; */
 
 }
 .carousel-3d-slide.current > .imageContents{
   opacity: 1;
-  
-  /* margin-top: 1em; */
   font-family: montserrat, sans-serif;
 }
 .team_heads{
@@ -230,8 +224,11 @@ export default {
   .imageContents > .avatar_skills{
     font-size: 0.8em;
   }
+  .imgline{
+  width: 99px;
+  position: relative;
+  top: -0.5em;
 }
-/* .heads > .line{
-  background: ;
-} */
+}
+
 </style>

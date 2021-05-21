@@ -3,7 +3,7 @@
       <div class="meet_team">
        <div class="team_heads text-center">
          <div class="head_meet_teams">Demlinks at a <span class="TeamStyle" >Glance</span></div>
-         <img src="@/assets/stroke.png" alt="">
+         <img class="imgline" src="@/assets/stroke.png" alt="">
             <div class="contents">
                  <v-container class="text-left">
                     <v-row>
@@ -122,6 +122,11 @@ export default {
 }
 }
 @media screen and (max-width: 600px) {
+    .imgline{
+  width: 99px;
+  position: relative;
+  top: -0.5em;
+}
     .team_heads > .head_meet_teams{
     font-size: 1.8em;
   }

@@ -14,7 +14,7 @@
                  >
                  <div class="team_heads text-center">
                     <div class="head_meet_teams">Our <span class="TeamStyle" >Expertise</span></div>
-                    <img src="@/assets/stroke.png" alt="">
+                    <img class="imgline" src="@/assets/stroke.png" alt="">
                  </div>
                  <v-card-text>
                      <v-container class="textContents ">
@@ -216,6 +216,11 @@ color: white;
 }
  }
  @media screen and (max-width: 500px){
+   .imgline{
+  width: 99px;
+  position: relative;
+  top: -0.5em;
+}
    .quoteContent{
      padding-right: 0;
      margin-bottom: 4em;

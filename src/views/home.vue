@@ -615,7 +615,6 @@ line-height: 30px;
   background-color: white;
   z-index: 1 ;
   top: 0;
-  /* transition: 0.8s ease-in-out all; */
   background-image: url('../assets/Vector 1.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -682,7 +681,6 @@ font-size: 25px;
   }
   .mission-vision-head{
     font-size: 18px;
-    /* margin-top: 1em; */
   }
   .mission-vision-content{
     font-weight: 300;
