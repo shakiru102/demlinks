@@ -60,7 +60,6 @@ export default {
         bus.$on('changeClass', (data) => {
             const indexs = this.navs.findIndex(doc => doc.name === data)
             this.navs[indexs].onpage = true
-            console.log(indexs)
         })
     }
 

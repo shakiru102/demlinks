@@ -289,7 +289,9 @@ export default {
  },
  methods: {
    handleAnime(){
-     gsap.to('.homeimg', {  yPercent: -100, opacity: 0,   ease: 'power'  })
+     const tl = gsap.timeline()
+       tl.to('.homeimg', {  yPercent: -100, opacity: 0,   ease: 'power'  })
+       tl.from('.others', {  yPercent: 10, opacity: 0,   ease: 'power'  })
      setTimeout(()=>{
      this.reveal = !this.reveal
      }, 2000 )
@@ -300,7 +302,9 @@ export default {
 
 <style scoped>
 .v-image.imgbtn{
-  margin: 4em auto;
+  position: relative;
+  top: 4em;
+  margin:  auto;
 }
 .homeimg{
   height: 100vh;
@@ -481,7 +485,7 @@ padding-right: 1em;
 border-radius: 12px;
 margin-right: 4em;
 color: white;
-text-transform: lowercase;
+text-transform: initial;
 font-family: poppins;
 font-weight: 300;
 }
@@ -613,7 +617,7 @@ line-height: 30px;
   width: 100%;
   height: 100vh;
   background-color: white;
-  z-index: 1 ;
+  z-index: 100000 ;
   top: 0;
   background-image: url('../assets/Vector 1.png');
   background-position: center;
