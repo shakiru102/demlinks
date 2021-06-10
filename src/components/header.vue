@@ -54,7 +54,7 @@ import { bus } from '../main'
 export default {
     data: ()=>({
     dialog: false,
-    navs: [{onpage: false,name:'Home', link:'/'}, {onpage: false,name:'About Us', link:'/about'}, {onpage: false,name:'Services', link:'/services'}, {onpage: false,name:'Portfolio', link:'/portfolio'}, {onpage: false,name:'Contact', link:'/contact'}]
+    navs: [{onpage: false,name:'Home', link:'/'}, {onpage: false,name:'About Us', link:'/about'}, {onpage: false,name:'Services', link:'/'}, {onpage: false,name:'Portfolio', link:'/'}, {onpage: false,name:'Contact', link:'/'}]
     }),
     mounted(){
         bus.$on('changeClass', (data) => {
