@@ -15,6 +15,10 @@
                  </div>
                </v-flex>
                <v-flex xs12 sm6>
+                 <form
+                  action="https://formspree.io/f/xknkbgpg"
+                  method="POST"
+                >
                  <v-card 
                  tile
                  elevation="10"
@@ -29,21 +33,21 @@
                       <v-list>
                         <v-list-item class="cardList">
                           <v-list-item-content>
-                            <v-text-field type="text"  
+                            <v-text-field type="text" name="Your name" 
                             label="Your name..."  outlined color="#9B4C0E"></v-text-field>
                             
                           </v-list-item-content>
                         </v-list-item>
                         <v-list-item class="cardList">
                           <v-list-item-content>
-                            <v-text-field type="text"  
+                            <v-text-field type="email" name="Your mail"  
                             label="Your mail..."   outlined color="#9B4C0E"></v-text-field>
                             
                           </v-list-item-content>
                         </v-list-item>
                         <v-list-item class="cardList">
                           <v-list-item-content>
-                              <v-textarea
+                              <v-textarea name="comment"
                                      
                                       outlined
                                       color="#9B4C0E"
@@ -53,12 +57,13 @@
                         </v-list-item>
                         <v-list-item class="cardList2">
                           <v-list-item-content>
-                          <v-btn width="100%" tile class="cardBtn"><div class="">SEND</div></v-btn>
+                          <v-btn width="100%" tile class="cardBtn" type="submit"><div class="">SEND</div></v-btn>
                           </v-list-item-content>
                         </v-list-item>
                       </v-list>
                    </v-card-text>
                  </v-card>
+                 </form>
                </v-flex>
                <v-flex xs12 sm6 >
                   <v-container class="move">

@@ -6,10 +6,10 @@
         <v-layout row wrap>
           <v-flex xs12 sm6>
             <div class="amet">
-              Amet mminim mollit no
+              We Build, We Create!
             </div>
             <div class="amet-cont">
-              Lorem ipsum dolor sit, amet coerendis ad ea exercitationem, quia soluta quasi ducimus officia non, accusamus itaque aut reprehenderit accusantium atque.
+              Demlinks Technologies advocates for smart living, security consciousness, and help individual and company to derive business to peak of success...
             </div>
                 <v-btn width="180px" height="50px"  class="big-btn hidden-xs-only" color="#9B4C0E">select a service</v-btn>
                  <v-btn width="140px" height="38.89px"  class="big-btn  hidden-sm-and-up" color="#9B4C0E">select a service</v-btn>
@@ -47,7 +47,7 @@
             <div class="story-cont">
            We are a team of great minds dedicated to serving our consumer with an excellent delivery service thus greatly improving our client's revenue and engagements.
            <div class="pt-10">
-           We are a team of great minds dedicated to serving our consumer with an excellent delivery service thus greatly improving our client's revenue and engagements.
+           We combine various skills to build and implement projects to suite clients wants and train interns to be best in their chosen career.
            </div>
             </div>
           </v-flex>
@@ -115,7 +115,7 @@
             <v-flex xs sm6>
               <div class="card-title-two">Business Branding</div>
                 <div class="card-content-two ">
-                  We are profient in designing world class website to suit your business and taste. we also manage your website to become the most displayed when anything related to what you donig being searched for.
+                  We're a digital Agency passionate about developing responsive and elegant websites, brands and digital products 
                 </div>
                 <div class="text-right hidden-xs-only">
                       <v-btn :width="widths" class="small-btn" :height="heights"  :color="colors">Learn more.</v-btn>
@@ -144,7 +144,7 @@
               <v-flex xs12 sm6>
                 <div class="card-title">Home Automation</div>
                 <div class="card-content">
-                  We are profient in designing world class website to suit your business and taste. we also manage your website to become the most displayed when anything related to what you donig being searched for.
+                  We offer proficient automation and software solutions for everyone who desires innovation, luxury, convenient and full-fledge support for his dormitory/company.
                 </div>
                 <div class="text-right hidden-xs-only">
                       <v-btn :width="widths" class="small-btn" :height="heights"  :color="colors">Learn more.</v-btn>
@@ -164,7 +164,7 @@
             <v-flex xs sm6>
               <div class="card-title-two">CCTV/Remote Video Monitoring</div>
                 <div class="card-content-two ">
-                  We are profient in designing world class website to suit your business and taste. we also manage your website to become the most displayed when anything related to what you donig being searched for.
+                  We are expect in providing remote security to anywhere depending on clients choice using sophisticated and updated technology.
                 </div>
                 <div class="text-right hidden-xs-only">
                       <v-btn :width="widths" class="small-btn" :height="heights"  :color="colors">Learn more.</v-btn>
@@ -273,9 +273,9 @@ export default {
    heights: '40px',
    widths: '130px',
    testimonials: [
-     {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'},
-     {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'},
-     {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'John Tee', info: 'CEO, Frit Publications'}
+     {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
+     {image: 'testimony 2.png', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Akanmu Samad', info: 'CEO, SamadVisuals'},
+     {image: 'testimony 1.png', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Salaudeen Tawab', info: 'CEO, Frit Publications'}
    ],
    compName: 'Home'
  }),
