@@ -1,6 +1,6 @@
 <template>
    <div>
-         <v-app-bar flat class="nav" height="60px"   dark>
+         <v-app-bar flat fixed class="nav" height="60px"   dark>
               <v-toolbar-title class="logo">
                    <v-container class="">
                       <v-row>
@@ -19,10 +19,12 @@
               </v-toolbar-title>
               <v-spacer></v-spacer>
               <div class="cont hidden-sm-and-down">
-                     <a 
+                     <router-link 
+                     
                     v-for="(nav, index) in navs" :key="index" 
-                     :class="{btn: 'btn', onpage: nav.onpage }"
-                    :href="nav.link">{{nav.name}}</a>
+                     :class="{btn: 'btn' }"
+                    exact-active-class="onpage"
+                    :to="nav.link">{{nav.name}}</router-link>
               </div>
               <!-- <v-spacer></v-spacer> -->
               <v-app-bar-nav-icon @click="dialog = !dialog" class="hidden-md-and-up"></v-app-bar-nav-icon>
@@ -36,10 +38,10 @@
              <div class="text-right pa-4"> <v-icon @click="dialog =!dialog" medium color="white">mdi-close</v-icon>
              </div>
              <v-list class="my-16">
-                 <v-list-item :class="{act: 'act', onpage: nav.onpage}" :href="nav.link" v-for="(nav, index) in navs" :key="index" >
+                 <v-list-item :class="{act: 'act', onpages: nav.onpage}" :href="nav.link" v-for="(nav, index) in navs" :key="index" >
                      <v-list-item-content>
                          <v-list-item-subtitle class="text-center">
-                             <span :class="{mobileNavs: 'mobileNavs', onpage: nav.onpage}">{{nav.name}}</span>
+                             <span :class="{mobileNavs: 'mobileNavs', onpages: nav.onpage}">{{nav.name}}</span>
                          </v-list-item-subtitle>
                      </v-list-item-content>
                  </v-list-item>
@@ -54,7 +56,7 @@ import { bus } from '../main'
 export default {
     data: ()=>({
     dialog: false,
-    navs: [{onpage: false,name:'Home', link:'/'}, {onpage: false,name:'About Us', link:'/about'}, {onpage: false,name:'Services', link:'/'}, {onpage: false,name:'Portfolio', link:'/'}, {onpage: false,name:'Contact', link:'/'}]
+    navs: [{onpage: false,name:'Home', link:'/'}, {onpage: false,name:'About Us', link:'/about'}, {onpage: false,name:'Services', link:'/services'}, {onpage: false,name:'Portfolio', link:'/portfolio'}, {onpage: false,name:'Contact', link:'/contact'}]
     }),
     mounted(){
         bus.$on('changeClass', (data) => {
@@ -93,7 +95,7 @@ header.nav.v-sheet{
     /* margin: 0 2em; */
 }
 
-.btn.onpage{
+.onpage{
      outline: none;
     display: inline-block;
     height: 30px;
@@ -129,12 +131,12 @@ a.act.v-list-item .v-list-item__content .v-list-item__subtitle .mobileNavs{
     padding-bottom: 0.5em;
     transition: all 0.3s;
 }
-a.act.v-list-item .v-list-item__content .v-list-item__subtitle .mobileNavs.onpage{
+a.act.v-list-item .v-list-item__content .v-list-item__subtitle .mobileNavs.onpages{
     color: black;
     font-family: poppins;
     border-bottom: solid 2px white;
 }
-a.act.onpage.v-list-item{
+a.act.onpages.v-list-item{
     background:  rgba(155, 75, 14, 0.268);
 
 }

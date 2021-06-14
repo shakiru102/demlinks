@@ -19,18 +19,20 @@
             :src="require('@/assets/hero-image.jpeg')" ></v-img>
           </v-flex>
           <v-flex xs12 class="hidden-sm-and-up text-center" >
-            <v-img @click="handleAnime" class="imgbtn" height="30px" width="26.5px"  contain src="@/assets/scroll.png"></v-img>
-            
+            <a href="" v-scroll-to="'#ourstory'">
+            <v-img  class="imgbtn" height="30px" width="26.5px"  contain src="@/assets/scroll.png"></v-img>
+            </a>
           </v-flex>
         </v-layout>
       </v-container>
     </div>
     </div>
-    <div class="others" >
+    <!-- </div> -->
+    <div id="ourstory" class="others" >
      <v-container class="mt-16">
         <v-layout row wrap>
            <v-flex xs12>
-            <div class="headOne text-center ">
+            <div  class="headOne text-center ">
               Our <span class="headTwo">Story</span>
             </div>
             <div class="text-center">
@@ -77,7 +79,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-        <div class="headOne move text-center">
+        <div id="services" class="headOne move text-center">
               What <span class="headTwo">We Offer</span>
             <div class="text-center ">
               <img class="imgline" src="@/assets/stroke.png" alt="">
@@ -280,30 +282,17 @@ export default {
    compName: 'Home'
  }),
  mounted () {
-   if(screen.width > 600){
-     this.reveal = true
-   }
      bus.$emit('changeClass', this.compName)
-     gsap.to('.imgbtn', { y: -10,autoAlpha: 0.4 , repeat: -1, yoyo: true, ease:'power' })
+     gsap.to('.imgbtn', { y: -10,autoAlpha: 0.4 , repeat: -1, yoyo: true, ease:'power', duration: 0.7 })
      
  },
- methods: {
-   handleAnime(){
-     const tl = gsap.timeline()
-       tl.to('.homeimg', {  yPercent: -100, opacity: 0,   ease: 'power'  })
-       tl.from('.others', {  yPercent: 10, opacity: 0,   ease: 'power'  })
-     setTimeout(()=>{
-     this.reveal = !this.reveal
-     }, 2000 )
-   }
- }
 }
 </script>
 
 <style scoped>
 .v-image.imgbtn{
   position: relative;
-  top: 4em;
+  top: 5em;
   margin:  auto;
 }
 .homeimg{
@@ -313,6 +302,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 
 }
 
@@ -613,20 +603,28 @@ line-height: 30px;
 
 @media screen and (max-width: 600px) {
   .homeimg{
-  position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: white;
-  z-index: 100000 ;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
+  background-color: white;
   background-image: url('../assets/Vector 1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
+
 .others{
- position: relative; 
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
   transition: 0.5s ease-in-out all;
+  background: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .imgline{
@@ -642,7 +640,7 @@ left: -2.5px;
   margin: auto;
 }
 .amet{
- margin-top: 2em;
+ margin-top: 3.5em;
  padding-left: 20px;
 font-size: 25px;
 }

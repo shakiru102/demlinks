@@ -3,9 +3,7 @@
     <v-main>
       <!-- <div class="fill"> -->
       <Head />
-      <div class="overflow-hidden">
       <router-view></router-view>
-      </div>
     </v-main>
   </v-app>
 </template>
