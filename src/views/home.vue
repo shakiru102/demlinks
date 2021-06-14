@@ -60,7 +60,7 @@
                   Mission
                 </div>
                 <div class="mission-vision-content">
-                 Exercitation veniam conse quat nostrud amet.
+                 To create a society for individuals with great Mindset and make there dreams a reality.
                 </div>
               </v-card-text>
             </v-card>
@@ -97,7 +97,7 @@
               <v-flex xs12 sm6>
                 <div class="card-title">Web Design & Development</div>
                 <div class="card-content">
-                  We are profient in designing world class website to suit your business and taste. we also manage your website to become the most displayed when anything related to what you donig being searched for.
+                  We are profient in designing world class website to suit your business and taste. we also manage your website to become the most displayed when anything related to what you doing is being searched for.
                 </div>
                 <div class="text-right hidden-xs-only">
                       <v-btn :width="widths" class="small-btn" :height="heights"  :color="colors">Learn more.</v-btn>
@@ -166,7 +166,7 @@
             <v-flex xs sm6>
               <div class="card-title-two">CCTV/Remote Video Monitoring</div>
                 <div class="card-content-two ">
-                  We are expect in providing remote security to anywhere depending on clients choice using sophisticated and updated technology.
+                  We are expert in providing remote security to anywhere depending on clients choice using sophisticated and updated technology.
                 </div>
                 <div class="text-right hidden-xs-only">
                       <v-btn :width="widths" class="small-btn" :height="heights"  :color="colors">Learn more.</v-btn>
@@ -295,6 +295,9 @@ export default {
   top: 5em;
   margin:  auto;
 }
+.others{
+  overflow: hidden;
+}
 .homeimg{
   height: 100vh;
   transition: 0.8s ease-in-out all;
@@ -375,6 +378,7 @@ padding-top: 3em;
 .v-card.mission-vision{
   width: 355px;
 height: 180px;
+padding-bottom: 1em;
 background: #FFFFFF;
 box-shadow: 0px 7px 10px rgba(178, 114, 16, 0.3);
 border-radius: 27px;
@@ -384,7 +388,7 @@ margin: 5em auto;
   font-family: Poppins;
 font-style: normal;
 font-weight: 300;
-font-size: 20px;
+font-size: 17px;
 line-height: 27px;
 color: #000000;
 }
@@ -678,15 +682,17 @@ font-size: 25px;
   }
   .v-card.mission-vision{
     width: 250px;
-  height: 132px;
+  min-height: 132px;
   margin: 2em auto;
+  padding: 0;
   }
   .mission-vision-head{
     font-size: 18px;
   }
   .mission-vision-content{
     font-weight: 300;
-    font-size: 15px;
+    font-size: 12px;
+    
   }
   .card-title,.card-title-two{
     font-size: 1.2em;

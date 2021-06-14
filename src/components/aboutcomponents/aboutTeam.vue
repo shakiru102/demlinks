@@ -8,15 +8,15 @@
           <v-layout row wrap>
               <v-flex xs12 sm6 >
                   <div class="content-padding">
-                      We are a team og great minds dedicated to serving our consumers with an excellent delivery service thus greatly improving our client's revenue and engagements.
+                      We are a team of great minds dedicated to serving our consumers with an excellent delivery service thus greatly improving our client's revenue and engagements.
                   </div>
                   <div class="content-padding mt-8">
-                      We are a team og great minds dedicated to serving our consumers with an excellent delivery service thus greatly improving our client's revenue and engagements.
+                      We are a team of great minds dedicated to serving our consumers with an excellent delivery service thus greatly improving our client's revenue and engagements.
                   </div>
               </v-flex>
               <v-flex xs12 sm6 >
                   <div class="content-padding">
-                      We are a team og great minds dedicated to serving our consumers with an excellent delivery service thus greatly improving our client's revenue and engagements.
+                      We are a team of great minds dedicated to serving our consumers with an excellent delivery service thus greatly improving our client's revenue and engagements.
                   </div>
                   <div class="content-padding mt-8">
                       thus greatly improving our client's revenue and engagements.
