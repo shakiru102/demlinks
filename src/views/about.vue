@@ -34,7 +34,7 @@
        :adjustableHeight="true"
         :autoplay="true">
           <slide v-for="(doc, index) in images" :key="index" :index="index">
-              <img contain :src="require('@/assets/' + doc.img)" class="image" alt="">
+              <img  :src="require('@/assets/' + doc.img)" class="image" alt="">
               <div class="imageContents text-center">
                 <div class="avatar_name">{{doc.name}}</div>
                 <div class="avatar_skills">{{ doc.skills }}</div>
@@ -71,11 +71,11 @@ export default {
         model: [1, 2, 3, 4, 5, 6],
         compName: 'About Us',
         images: [
-          { name:'John Tee', skills:'Team Lead, Tech and Design', img:'mand-holding-cup_1258-340.jpg'},
-          { name:'Kelvin Kurt', skills:'Team Lead, Tech and Design', img:'confident-business-team-with-leader_1098-3228.jpg'},
+          { name:'Shittu Moshood', skills:'Frontend Developer', img:'IMG-20210828-WA0001.jpg'},
+          { name:'Adebisi Abdullahi', skills:'UI/UX Designer', img:'IMG-20210828-WA0002.jpg'},
           { name:'Jack Moris', skills:'Team Lead, Tech and Design', img:'blond-man-happy-expression_1194-2873.jpg'},
-          { name:'John Doe', skills:'Team Lead, Tech and Design', img:'young-businessman-siting-cafeteria-with-laptop-computer-table_342744-455.jpg'},
-          { name:'Danny Wright', skills:'Team Lead, Tech and Design', img: 'businessman-leader-modern-office-with-businesspeople-working_1139-961.jpg'}]
+          { name:'Oladipupo Oyinkansola', skills:'Backend Developer', img:'IMG-20210828-WA0000.jpg'},
+          { name:' Owojori Habbibat', skills:'UI/UX Designer', img: 'IMG-20210827-WA0004.jpg'}]
     }),
     mounted () {
      bus.$emit('changeClass', this.compName)
@@ -86,17 +86,19 @@ export default {
 
 <style scoped>
 .aboutImage{
-  height: 70vh;
+  height: 80vh;
     background-image: url('../assets/footer.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 .overlayParent{
     background: linear-gradient( to right, #f2a839b4 , #f4733b7c);
     color: white;
     height: 100%;
     font-family: montserrat, sans-serif;
+    padding-top: 4em;
 }
 .about_demlinks{
     font-size: 1.2em;
@@ -134,6 +136,7 @@ export default {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 0px 3px 10px  rgba(19, 18, 18, 0.404);
+
 }
 .carousel-3d-slide > .imageContents{
   opacity: 0;
@@ -179,6 +182,7 @@ export default {
   
 }
 @media screen and (max-width: 600px) {
+  
   .aboutImage{
     height: 100vh;
       background-image: url('../assets/other.png');
@@ -197,7 +201,7 @@ export default {
     margin-top: 1em;
   }
   .result_driven .head{
-    font-size: 2em;
+    font-size: 1.6em;
   }
   .result_driven .content{
     font-size: 1em;

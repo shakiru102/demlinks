@@ -32,7 +32,7 @@
      <v-container class="mt-16">
         <v-layout row wrap>
            <v-flex xs12>
-            <div  class="headOne text-center ">
+            <div  class="headOne move text-center ">
               Our <span class="headTwo">Story</span>
             </div>
             <div class="text-center">
@@ -53,7 +53,11 @@
            </div>
             </div>
           </v-flex>
-          <v-flex xs12 sm6>
+          <v-flex xs12 >
+            <div class="mission-vision-cont">
+             <v-container class="">
+               <v-layout row wrap>
+                    <v-flex xs12 sm6>
             <v-card class="mission-vision" >
               <v-card-text>
                 <div class="mission-vision-head">
@@ -76,6 +80,10 @@
                 </div>
               </v-card-text>
             </v-card>
+          </v-flex>
+               </v-layout>
+              </v-container>
+            </div>
           </v-flex>
         </v-layout>
       </v-container>
@@ -217,10 +225,10 @@
                 >
                  <v-container class="">
                    <v-layout row wrap>
-                     <v-flex xs12 sm6 >
+                     <v-flex xs12 sm5 >
                         <v-img class="img"  :src="require('@/assets/' + doc.image)"></v-img>
                      </v-flex>
-                     <v-flex xs12 sm6 >
+                     <v-flex xs12 sm7 >
                        <v-card-text class="testimonal-text">
                          <v-row>
                            <v-col cols="2">
@@ -314,12 +322,12 @@ export default {
   font-weight: 500;
   font-family: montserrat, sans-serif;
   color: rgba(255, 255, 255, 1);
- margin-top: 3em;
+ margin-top: 4em;
  margin-bottom: 0.5em;
 }
 .amet-cont{
-  font-family: montserrat, sans-serif;
-  font-weight: 300;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
   font-size: 23px;
   line-height: 27px;
   color: rgba(255, 255, 255, 1);
@@ -332,7 +340,7 @@ background: #9B4C0E;
 border-radius: 19px;
 color: white;
 text-transform: lowercase;
-margin: 2em 0;
+margin: 4em 0;
 font-family: montserrat, sans-serif;
 }
 .v-image.images{
@@ -352,8 +360,7 @@ line-height: 27px;
 color: #000000;
 }
 .headOne.move{
-  position: relative;
-  bottom: -120px;
+  margin-bottom: 10px;
 }
 .headTwo{
   color: #F9B620;
@@ -365,6 +372,7 @@ filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
 /* box-shadow: 0px 7px 10px rgba(178, 114, 16, 0.3); */
 border-radius: 28px;
 margin-top: 3em;
+margin-left: 4em;
 
 }
 .story-cont{
@@ -373,7 +381,9 @@ font-style: normal;
 font-weight: 200;
 font-size: 20px;
 color: #000000;
-padding-top: 3em;
+padding-top: 4em;
+margin-left: -4em;
+padding-right: 3em;
 }
 .v-card.mission-vision{
   width: 355px;
@@ -392,6 +402,11 @@ font-size: 17px;
 line-height: 27px;
 color: #000000;
 }
+.mission-vision-cont{
+  width: 75%;
+ /* border: solid 2px black; */
+ margin: 0 auto 4em;
+}
 .mission{
   text-align: right;
 }
@@ -407,7 +422,7 @@ margin-bottom: 1em;
 .bg{
   min-height: 444px;
   background: linear-gradient(110.26deg, #F2A839 40.75%, #F4743B 108.81%);
- margin-top: 10em;
+ margin-top: 4em;
  }
 .v-card.card-left{
   width: 251px;
@@ -478,6 +493,7 @@ padding-right: 1em;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
 border-radius: 12px;
 margin-right: 4em;
+margin-top: 2em;
 color: white;
 text-transform: initial;
 font-family: poppins;
@@ -494,7 +510,7 @@ font-size: 20px;
   min-height: 400px;
 }
 .v-card.carousel-card{
-  width: 1300px;
+  width: 90%;
   height: 350px;
   margin: auto;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
@@ -528,6 +544,7 @@ line-height: 30px;
 }
 .testimonal-text{
   margin: 5em 0 ;
+  padding-right: 4em;
 }
 @media screen and (max-width: 800px) {
   .homeimg{
@@ -655,7 +672,7 @@ font-size: 25px;
 }
 .big-btn{
  margin-left: 1em; 
- margin-top: 4em; 
+ margin-top: 2em; 
  font-size: 12px;
 }
   .headOne{
@@ -675,10 +692,8 @@ font-size: 25px;
   .story-cont{
     font-weight: 260;
     font-size: 0.9em;
-    padding:  1em;
-    margin-bottom: 0;
-    margin-top: -170px;
-    padding-top: 0;
+    padding:  1em 2em;
+    margin: -170px 0 0;
   }
   .v-card.mission-vision{
     width: 250px;

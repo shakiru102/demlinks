@@ -20,7 +20,7 @@
                      <v-container class="textContents ">
                          <v-layout row wrap justify-center>
                              <v-flex xs12>
-                             <div class="mb-5">
+                             <div class="mb-5 aboutfooter-cont">
                                  We have been working on variety of projects accross different industries, making our work as appropriate, versatile and functional response to the needs of our client. Our capabilities cover the following areas;
                              </div>
                          </v-flex>
@@ -108,6 +108,11 @@ export default {
   overflow: hidden;
   padding-bottom: 2em;
 }
+.aboutfooter-cont{
+  line-height: 1.5em;
+  font-size: 15px;
+  /* font-size: 2px; */
+}
 div.footerImage{
   width: 100%;
   height: 643px;
@@ -123,7 +128,7 @@ div.footerImage{
 .contCard.v-card{
   width: 80%;
   height: 60vh;
-  margin: 0 auto; 
+  margin: 4em auto; 
   padding: 5em auto;
 
  }
@@ -186,6 +191,7 @@ color: white;
 }
 .expertise{
     margin-top: 1em;
+    font-size: 15px;
 }
  /* mobile view  */
  
@@ -215,11 +221,14 @@ color: white;
     margin-top: 0;
 }
  }
- @media screen and (max-width: 500px){
+ @media screen and (max-width: 600px){
    .imgline{
   width: 99px;
   position: relative;
   top: -0.5em;
+}
+.aboutfooter-cont{
+  line-height: 1.5em;
 }
    .quoteContent{
      padding-right: 0;
@@ -229,10 +238,14 @@ color: white;
    .contCard.v-card{
      width: 90%;
      height: 600px;
+     padding: 2.5em auto;
    }
    .wrapsCont{
      position: relative;
      bottom: 0;
+   }
+   .expertise{
+     margin-top: 0.5em;
    }
    .foot{
      padding-bottom: 0em;

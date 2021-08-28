@@ -48,7 +48,7 @@
                         <v-list-item class="cardList">
                           <v-list-item-content>
                               <v-textarea name="comment"
-                                     
+                                     auto-grow
                                       outlined
                                       color="#9B4C0E"
                                       label="Your message..."
@@ -161,13 +161,13 @@ div.footerImage{
   font-family: montserrat;
   color: black;
   font-weight:500;
-  font-size: 1.5em;
-  padding-right: 10em;
+  font-size: 2em;
+  padding-right: 3em;
 
 }
 .quoteContent{
   font-family: poppins;
-  font-weight:280;
+  font-weight:400;
   padding-right: 21em;
   margin-top: 1em;
 }

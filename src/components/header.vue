@@ -75,7 +75,7 @@ header.nav.v-sheet{
     /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
 }
 .cont{
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
