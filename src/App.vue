@@ -12,6 +12,16 @@
 import Head from '@/components/header'
 export default {
   name: 'App',
+  metaInfo (){
+    return {
+          meta: [
+            { name: 'theme-color', content: '#ec7519'},
+            { name: 'msapplication-navbutton-color', content: '#ec7519'},
+            { name: 'apple-mobile-web-app-capable', content: 'yes'},
+            { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
+          ]
+    }
+  },
 
   components: {
     Head
