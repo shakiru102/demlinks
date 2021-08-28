@@ -15,8 +15,8 @@ export default {
   metaInfo (){
     return {
           meta: [
-            { name: 'theme-color', content: '#ec7519'},
-            { name: 'msapplication-navbutton-color', content: '#ec7519'},
+            { name: 'theme-color', content: '#f59145'},
+            { name: 'msapplication-navbutton-color', content: '#f59145'},
             { name: 'apple-mobile-web-app-capable', content: 'yes'},
             { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
           ]
