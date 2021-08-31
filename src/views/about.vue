@@ -34,7 +34,7 @@
        :adjustableHeight="true"
         :autoplay="true">
           <slide v-for="(doc, index) in images" :key="index" :index="index">
-              <img  :src="require('@/assets/' + doc.img)" class="image" alt="">
+              <v-img  position="top" :src="require('@/assets/' + doc.img)" class="image" alt=""></v-img>
               <div class="imageContents text-center">
                 <div class="avatar_name">{{doc.name}}</div>
                 <div class="avatar_skills">{{ doc.skills }}</div>
@@ -56,7 +56,6 @@ import { bus } from '../main'
  import AboutGlance from "@/components/aboutcomponents/aboutGlance"
  import AboutFooter from "@/components/aboutcomponents/aboutfooter"
  import AboutProcess from "@/components/aboutcomponents/aboutprocess"
- 
 
 export default {
    components: {
@@ -65,7 +64,7 @@ export default {
     AboutTeam,
     AboutGlance,
     AboutFooter,
-    AboutProcess
+    AboutProcess,
   },
     data: () => ({
         model: [1, 2, 3, 4, 5, 6],
@@ -73,9 +72,12 @@ export default {
         images: [
           { name:'Shittu Moshood', skills:'Frontend Developer', img:'IMG-20210828-WA0001.jpg'},
           { name:'Adebisi Abdullahi', skills:'UI/UX Designer', img:'IMG-20210828-WA0002.jpg'},
-          { name:'Jack Moris', skills:'Team Lead, Tech and Design', img:'blond-man-happy-expression_1194-2873.jpg'},
+          { name:'Badakin Favour', skills:'Networking, Frontend Developer', img:'silencer.jpg'},
           { name:'Oladipupo Oyinkansola', skills:'Backend Developer', img:'IMG-20210828-WA0000.jpg'},
-          { name:' Owojori Habbibat', skills:'UI/UX Designer', img: 'IMG-20210827-WA0004.jpg'}]
+          { name:'Owojori Habbibat', skills:'UI/UX Designer', img: 'IMG-20210827-WA0004.jpg'},
+          { name:'Tiamiyu Mubarak', skills:'UI/UX Designer', img: 'mubarak.jpg'},
+          { name:'Olarinde Beulah', skills:'Content Writer', img: 'beulah.jpg'}
+          ]
     }),
     mounted () {
      bus.$emit('changeClass', this.compName)
@@ -117,19 +119,29 @@ export default {
     font-weight: 300;
 }
 
-
+.carousel-3d-container{
+  /* background-color: black; */
+ /* padding: 2em 0; */
+ min-height: 400px;
+}
+.carousel-3d-slider{
+ min-height: 400px;
+}
 
 .carousel-3d-slide{
   border: none;
   border-radius: 30px;
   background: white;
+ min-height: 400px;
+
 }
 .imageContents > .avatar_name{
   font-weight: bold;
   font-size: 1em;
   color: #f2a839;
+  margin-top: 1em;
 }
-.carousel-3d-slide > img{
+.carousel-3d-slide > .image{
   width: 100%;
   height: 80%;
   opacity: 0.7;
@@ -142,7 +154,7 @@ export default {
   opacity: 0;
 }
 
-.carousel-3d-slide.current > img{
+.carousel-3d-slide.current > .image{
   opacity: 1;
 
 }
@@ -164,6 +176,18 @@ export default {
   color: #f2a839;
 }
 @media screen and (max-width: 800px) {
+  .about_demlinks{
+    font-size: 1.2em;
+    text-shadow: 0px 3px 5px rgba(19, 18, 18, 0.295);
+    margin-top: 2em;
+}
+.head{
+    font-size: 1.5em;
+}
+.content{
+    font-size: 1em;
+    /* font-weight: 300; */
+}
  .aboutImage{
     height: 50vh;
   }
@@ -173,11 +197,9 @@ export default {
   .result_driven{
     margin-top: 1em;
   }
-  .carousel-3d-container{
-  min-height: 83vh ;
-}
+ 
 .carousel-3d-container{
-  min-height: 100% ;
+  min-height: 400px ;
 }
   
 }
@@ -212,12 +234,17 @@ export default {
   .carousel-3d-container{
   min-height: 100% ;
 }
+.carousel-3d-slider{
+  min-height: 100% ;
+}
   .carousel-3d-slide{
     max-width: 200px;
     margin: auto 5em;
+  min-height: 100%;
+
 
   }
-  .carousel-3d-slide > img{
+  .carousel-3d-slide > .image{
   height: 70%;
 
   }

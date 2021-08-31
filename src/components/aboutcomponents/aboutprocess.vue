@@ -128,7 +128,7 @@ ul > li.list::before{
 }
 .processCard{
     position: relative;
-    top: 7em;
+    top: 0em;
     left: 3em;
     background: rgba(155, 76, 14, 0.1);
     border-radius: 27px;
