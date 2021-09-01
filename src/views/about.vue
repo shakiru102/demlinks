@@ -42,7 +42,7 @@
           </slide>
      </carousel-3d>
     </div>
-     <AboutTeam />
+     <!-- <AboutTeam /> -->
      <AboutProcess />
     <AboutGlance />
      <AboutFooter /> 
@@ -52,7 +52,7 @@
 <script>
 import { bus } from '../main'
  import { Carousel3d, Slide } from 'vue-carousel-3d';
- import AboutTeam from "@/components/aboutcomponents/aboutTeam"
+//  import AboutTeam from "@/components/aboutcomponents/aboutTeam"
  import AboutGlance from "@/components/aboutcomponents/aboutGlance"
  import AboutFooter from "@/components/aboutcomponents/aboutfooter"
  import AboutProcess from "@/components/aboutcomponents/aboutprocess"
@@ -61,7 +61,7 @@ export default {
    components: {
     Carousel3d,
     Slide,
-    AboutTeam,
+    // AboutTeam,
     AboutGlance,
     AboutFooter,
     AboutProcess,
@@ -123,17 +123,17 @@ export default {
 .carousel-3d-container{
   /* background-color: black; */
  /* padding: 2em 0; */
- min-height: 500px;
+ min-height: 400px;
 }
 .carousel-3d-slider{
- min-height: 500px;
+ min-height: 400px;
 }
 
 .carousel-3d-slide{
   border: none;
   border-radius: 30px;
   background: white;
- min-height: 500px;
+ min-height: 400px;
 
 }
 .imageContents > .avatar_name{
