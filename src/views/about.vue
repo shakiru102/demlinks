@@ -76,7 +76,8 @@ export default {
           { name:'Oladipupo Oyinkansola', skills:'Backend Developer', img:'IMG-20210828-WA0000.jpg'},
           { name:'Owojori Habbibat', skills:'UI/UX Designer', img: 'IMG-20210827-WA0004.jpg'},
           { name:'Tiamiyu Mubarak', skills:'UI/UX Designer', img: 'mubarak.jpg'},
-          { name:'Olarinde Beulah', skills:'Content Writer', img: 'beulah.jpg'}
+          { name:'Olarinde Beulah', skills:'Content Writer', img: 'beulah.jpg'},
+          { name:'Shekoni Shakiru', skills:'Software Developer', img: 'shakiru.jpg'}
           ]
     }),
     mounted () {

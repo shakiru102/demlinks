@@ -7,7 +7,7 @@
               <div class="err_text my-3 ">
                 The page you are looking for does not exist or an error occured, go back to home page.
               </div>
-                  <v-btn  dark  color="#9B4C0E" class="text-capitalize button">home page</v-btn>
+                  <v-btn  dark to="/" color="#9B4C0E" class="text-capitalize button">home page</v-btn>
               
            </template>
            <template v-slot:right>
