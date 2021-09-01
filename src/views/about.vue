@@ -31,10 +31,13 @@
        </div>
        <carousel-3d 
        class="adjustable"
+       style="min-height: 400px;"
        :adjustableHeight="true"
         :autoplay="true">
-          <slide v-for="(doc, index) in images" :key="index" :index="index">
-              <v-img  position="top" :src="require('@/assets/' + doc.img)" class="image" alt=""></v-img>
+          <slide
+       style="min-height: 400px;"
+           v-for="(doc, index) in images" :key="index" :index="index">
+              <img  :src="require('@/assets/' + doc.img)" class="image" alt="" />
               <div class="imageContents text-center">
                 <div class="avatar_name">{{doc.name}}</div>
                 <div class="avatar_skills">{{ doc.skills }}</div>
@@ -42,7 +45,7 @@
           </slide>
      </carousel-3d>
     </div>
-     <!-- <AboutTeam /> -->
+     <AboutTeam />
      <AboutProcess />
     <AboutGlance />
      <AboutFooter /> 
@@ -52,7 +55,7 @@
 <script>
 import { bus } from '../main'
  import { Carousel3d, Slide } from 'vue-carousel-3d';
-//  import AboutTeam from "@/components/aboutcomponents/aboutTeam"
+ import AboutTeam from "@/components/aboutcomponents/aboutTeam"
  import AboutGlance from "@/components/aboutcomponents/aboutGlance"
  import AboutFooter from "@/components/aboutcomponents/aboutfooter"
  import AboutProcess from "@/components/aboutcomponents/aboutprocess"
@@ -61,7 +64,7 @@ export default {
    components: {
     Carousel3d,
     Slide,
-    // AboutTeam,
+    AboutTeam,
     AboutGlance,
     AboutFooter,
     AboutProcess,
@@ -120,36 +123,34 @@ export default {
     font-weight: 300;
 }
 
-.carousel-3d-container{
-  /* background-color: black; */
- /* padding: 2em 0; */
+/* .carousel-3d-container{
+  background-color: black;
+  padding: 2em 0;
  overflow: visible;
  min-height: 400px;
 }
 .carousel-3d-slider{
  overflow: visible;
  min-height: 400px;
-}
+} */
 
 .carousel-3d-slide{
- overflow: visible;
   border: none;
-  border-radius: 30px;
   background: white;
- min-height: 400px;
 
 }
 .imageContents > .avatar_name{
   font-weight: bold;
   font-size: 1em;
   color: #f2a839;
-  margin-top: 1em;
 }
 .carousel-3d-slide > .image{
   width: 100%;
   height: 80%;
   opacity: 0.7;
    border-radius: 30px;
+   object-position: top;
+   object-fit: cover;
   box-shadow: 0px 3px 10px  rgba(19, 18, 18, 0.404);
 
 }
