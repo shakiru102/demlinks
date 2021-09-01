@@ -123,17 +123,17 @@ export default {
 .carousel-3d-container{
   /* background-color: black; */
  /* padding: 2em 0; */
- min-height: 400px;
+ min-height: 500px;
 }
 .carousel-3d-slider{
- min-height: 400px;
+ min-height: 500px;
 }
 
 .carousel-3d-slide{
   border: none;
   border-radius: 30px;
   background: white;
- min-height: 400px;
+ min-height: 500px;
 
 }
 .imageContents > .avatar_name{
