@@ -123,13 +123,16 @@ export default {
 .carousel-3d-container{
   /* background-color: black; */
  /* padding: 2em 0; */
+ overflow: visible;
  min-height: 400px;
 }
 .carousel-3d-slider{
+ overflow: visible;
  min-height: 400px;
 }
 
 .carousel-3d-slide{
+ overflow: visible;
   border: none;
   border-radius: 30px;
   background: white;
@@ -146,8 +149,7 @@ export default {
   width: 100%;
   height: 80%;
   opacity: 0.7;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+   border-radius: 30px;
   box-shadow: 0px 3px 10px  rgba(19, 18, 18, 0.404);
 
 }
