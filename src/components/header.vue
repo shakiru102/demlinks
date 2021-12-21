@@ -6,7 +6,7 @@
                       <v-row>
                         <v-col>
                        <v-avatar class="avat" height="50px" width="50px">
-                      <v-img src="@/assets/m-logo.jpg"></v-img>
+                      <v-img width="70px" height="70px" src="@/assets/demlinks 2.jpg"></v-img>
                       </v-avatar>
                         </v-col>
                         <v-col>
@@ -142,9 +142,9 @@ a.act.onpages.v-list-item{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 .v-toolbar__title.logo{
-    margin-left: 1em;
+    margin-left: -0.5em;
 }
 }
 
