@@ -2,7 +2,7 @@
   <div>
       <footer class="foot">
        <div class="footerImage">
-         <img  src="@/assets/footer.png">
+         <!-- <img  src="@/assets/footer.png"> -->
        </div>
                  <v-container class="footerContent">
              <v-layout row wrap class="mt-16">
@@ -96,6 +96,8 @@ div.footerImage{
   position: absolute;
   bottom: 0;
   left: 0;
+  background: url('../assets/footer.png');
+ background-size: cover;
 }
 .container.footerContent{
   z-index: 2;

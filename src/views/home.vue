@@ -9,14 +9,14 @@
               We Build, We Create!
             </div>
             <div class="amet-cont">
-              Demlinks Technologies advocates for smart living, security consciousness, and help individual and company to derive business to peak of success...
+              Demlinks Technologies advocates for smart living, security consciousness, and help individual and company to drive business to peak of success...
             </div>
                 <v-btn width="180px" height="50px"  class="big-btn hidden-xs-only" color="#9B4C0E">select a service</v-btn>
                  <v-btn width="140px" height="38.89px"  class="big-btn  hidden-sm-and-up" color="#9B4C0E">select a service</v-btn>
             </v-flex>
           <v-flex xs12 sm6>
             <v-img  class="images"
-            :src="require('@/assets/hero-image.jpeg')" ></v-img>
+            :src="require('@/assets/mind.png')" ></v-img>
           </v-flex>
           <v-flex xs12 class="hidden-sm-and-up text-center" >
             <a href="" v-scroll-to="'#ourstory'">
@@ -40,10 +40,10 @@
             </div>
           </v-flex>
           <v-flex xs12 sm6>
-            <v-card
-             class="ourstory-img" >
-              <v-img  src="@/assets/our-story.png"></v-img>
-            </v-card>
+            <!-- <v-card 
+             class="ourstory-img" > -->
+              <v-img  src="@/assets/isolation.png" class="ourstory-img"></v-img>
+            <!-- </v-card> -->
           </v-flex>
           <v-flex xs12 sm6>
             <div class="story-cont">
@@ -99,7 +99,7 @@
             <v-layout row wrap>
               <v-flex xs12 sm6>
                 <v-card class="card-left mt-16">
-                  <v-img src="@/assets/web-design.jpeg"></v-img>
+                  <v-img src="@/assets/group.png"></v-img>
                 </v-card>
               </v-flex>
               <v-flex xs12 sm6>
@@ -327,9 +327,9 @@ export default {
 }
 .amet-cont{
   font-family: Poppins, sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 23px;
-  line-height: 27px;
+  line-height: 35px;
   color: rgba(255, 255, 255, 1);
 
 }
@@ -344,11 +344,11 @@ margin: 4em 0;
 font-family: montserrat, sans-serif;
 }
 .v-image.images{
-  width:457px;
-   height:288px;
+  width:818px;
+   height:613px;
   position: relative;
- left: 9em;
-top: 15em;
+ left: 7em;
+top: 4em;
 border-radius: 35px;
 }
 .headOne{
@@ -365,9 +365,9 @@ color: #000000;
 .headTwo{
   color: #F9B620;
 }
-.v-card.ourstory-img{
-  width: 344px;
-height: 316px;
+.ourstory-img{
+  width: 407px;
+height: 331px;
 filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
 /* box-shadow: 0px 7px 10px rgba(178, 114, 16, 0.3); */
 border-radius: 28px;
