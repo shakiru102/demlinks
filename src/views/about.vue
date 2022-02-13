@@ -17,8 +17,8 @@
                             </p>
                         </div>
                     </v-flex>
-                    <v-flex xs12 sm6>
-                        <v-img src="@/assets/undraw_personal_website_weap 1.png"></v-img>
+                    <v-flex xs12 sm6 >
+                        <v-img src="@/assets/draw.png" style="height:509px;"></v-img>
                     </v-flex>
                 </v-layout>
               </v-container>

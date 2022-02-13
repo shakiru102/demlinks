@@ -2,7 +2,7 @@
   <div>
       <footer class="foot">
        <div class="footerImage">
-         <img  src="@/assets/footer.png">
+         <!-- <img  src="@/assets/footer.png"> -->
        </div>
                  <v-container class="footerContent">
              <v-layout row wrap class="mt-16">
@@ -141,11 +141,15 @@ export default {
   padding-bottom: 2em;
 }
 div.footerImage{
+background: url('../assets/footer.png');
+ background-size: cover;
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
   height: 643px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 .container.footerContent{
   z-index: 2;

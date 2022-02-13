@@ -2,7 +2,7 @@
   <div>
       <footer class="foot">
        <div class="footerImage">
-         <img  src="@/assets/footer.png">
+         <!-- <img  src="@/assets/footer.png"> -->
        </div>
                  <v-container class="footerContent">
              <v-layout row wrap class="mt-16">
@@ -59,7 +59,7 @@
                          </v-row>
                          <v-row class=" line  ">
                            <v-col>
-                             <span>copyright © 2021, All right reserved.  </span>
+                             <span>copyright © 2022, All right reserved.  </span>
                            </v-col>
                            <v-col>
                              <div class="text-right">
@@ -115,6 +115,8 @@ export default {
 }
 div.footerImage{
   width: 100%;
+  background: url('../../assets/footer.png');
+ background-size: cover;
   height: 643px;
   position: absolute;
   bottom: 0;
