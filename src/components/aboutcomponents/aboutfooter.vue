@@ -59,7 +59,7 @@
                          </v-row>
                          <v-row class=" line  ">
                            <v-col>
-                             <span>copyright © 2021, All right reserved.  </span>
+                             <span>copyright © 2022, All right reserved.  </span>
                            </v-col>
                            <v-col>
                              <div class="text-right">
