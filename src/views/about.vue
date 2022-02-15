@@ -167,7 +167,7 @@ export default {
   font-family: montserrat, sans-serif;
 }
 .team_heads{
-  margin-top: 10em;
+  margin-top: 8em;
    margin-bottom: 5em;
 
 }
