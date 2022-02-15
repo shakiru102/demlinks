@@ -99,7 +99,7 @@
             <v-layout row wrap>
               <v-flex xs12 sm6>
                 <v-card class="card-left mt-16">
-                  <v-img src="@/assets/group.png"></v-img>
+                  <v-img src="@/assets/group.png" class="mobile"></v-img>
                 </v-card>
               </v-flex>
               <v-flex xs12 sm6>
@@ -654,9 +654,9 @@ line-height: 30px;
   top: -0.5em;
 }
 .v-image.images{
-  top: 25px;
-  width: 300px;
-height: 200px;
+  top: 5px;
+  width: 500px;
+height: 300px;
 left: -2.5px;
   margin: auto;
 }
@@ -754,5 +754,12 @@ font-size: 25px;
     width: 176.15px;
   height: 187.76px;
   }
+ .ourstory-img{
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+  }
+ 
+
   }
 </style>

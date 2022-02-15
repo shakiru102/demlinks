@@ -307,7 +307,14 @@ color: #454040;
    font-family: montserrat, sans-serif;
    font-size: 2.5em;
    font-weight: 500;
-   margin-top: 9em;
+}
+.aboutImage{
+  height: 120vh;
+    background-image: url('../assets/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 }
 </style>
