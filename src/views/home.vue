@@ -300,7 +300,7 @@ export default {
 <style scoped>
 .v-image.imgbtn{
   position: relative;
-  top: 5em;
+  top: 2em;
   margin:  auto;
 }
 .others{
