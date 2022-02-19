@@ -19,7 +19,7 @@
                         </div>
                     </v-flex>
                     <v-flex xs12 sm6 >
-                        <v-img src="@/assets/draw.png" style="height:509px;"></v-img>
+                        <v-img src="@/assets/draw.png" style="height:509px; " class="mage"></v-img>
                     </v-flex>
                 </v-layout>
               </v-container>
@@ -110,7 +110,7 @@
                             <v-card-text>
                             <p>{{doc.testimonial}}</p>
                             
-                            <p style="margin-top:-40px;">{{doc.testimonial}}</p>
+                            <p style="display:none;">{{doc.testimonial}}</p>
                             </v-card-text>
                            
      </v-card>
@@ -150,7 +150,6 @@ export default {
    
    ],
    
-   compName: 'Home',
      
  }),
     
@@ -190,6 +189,9 @@ export default {
 .content{
     font-size: 1.2em;
     font-weight: 300;
+    color: #FFFFFF;
+
+text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -260,12 +262,11 @@ color: #454040;
     @media screen and (max-width: 800px) {
         .v-image.img{
          margin: 2em;
-         width: 289px;
+         width: 280px;
     height:266px;
     border-radius: 37px;
 }
 .car{
-    margin-bottom: 8em;
     margin-top: 12em;
     display: none;
 }
@@ -280,7 +281,6 @@ color: #454040;
         font-size: 16px;
         line-height: 27px;
         width: 100%;
-        margin-bottom: 80px;
         
         color: #888484;
 
@@ -317,6 +317,11 @@ color: #454040;
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+.mage{
+width: 300px;
+margin-left: 30px;
+margin-top: -30px;
 }
 }
 </style>

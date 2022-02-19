@@ -30,6 +30,27 @@
       
     </div>
 
+    <div class="port">
+    <v-container 
+    >
+    <v-layout row wrap justify-center>
+    <v-flex md4 v-for="(doc, index) in portfolio" :key="index">
+             <v-img class="img"  :src="require('@/assets/' + doc.image)" style="width:300px;height:300px;"></v-img>
+                     
+                            <v-card-title >{{doc.head}}</v-card-title >
+                            
+                            <v-card-text>
+                            
+                            <p style= "width: 350px;" class="test">{{doc.test}}</p>
+                            </v-card-text>
+    
+    </v-flex>
+  
+    </v-layout>
+    </v-container>
+    
+    </div>
+
         <Foot/>
     </div>
 </template>
@@ -39,7 +60,17 @@ import Foot from '@/components/footer'
 export default {
     components:{
         Foot
-    }
+    },
+    data:() => ({
+        portfolio: [
+            {image:'Rectangle.png', head: 'Open Test CBT Software',
+             test: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.'},
+            {image:'Rectangle.png', head: 'Shopmeco',
+             test: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.'},
+             {image:'Rectangle.png', head: 'High School Manager',
+             test: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.'},
+   ]
+    })
 }
 </script>
 
@@ -85,4 +116,19 @@ export default {
 .TeamStyle{
   color: #f2a839;
 }
+.v-image.img{
+  margin: 2em;
+  width: 389px;
+    height:366px;
+    border-radius: 37px;
+}
+
+@media screen and (max-width: 800px) {
+v-img.img{
+        width: 300px;
+    }
+    .test{
+        width: 200px;
+    }
+    }
 </style>
