@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="total">
     
     <div class="aboutImage">
         <div class="overlayParent">
@@ -19,7 +19,7 @@
                         </div>
                     </v-flex>
                     <v-flex xs12 sm6 >
-                        <v-img src="@/assets/draw.png" style="height:709px; " class="mage"></v-img>
+                        <v-img src="@/assets/draw.png" style="height:709px;" class="mage"></v-img>
                     </v-flex>
                 </v-layout>
               </v-container>
@@ -347,6 +347,13 @@ color: #454040;
   background-size: cover;
 
 }
+.total{
+    overflow: hidden
+    }
+    .v-image.mage{
+      width: 400px;
+      height: 609;
+    }
 
 }
 </style>

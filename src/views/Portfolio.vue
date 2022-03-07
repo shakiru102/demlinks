@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="total">
         <div class="aboutImage">
         <div class="overlayParent">
              <v-container class="">
@@ -164,8 +164,10 @@ text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1em;
   }
   .mobil{
-      
+    
       margin-left: 30px;
   }
+  .total{
+    overflow: hidden}
     }
 </style>
