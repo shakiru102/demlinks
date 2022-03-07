@@ -56,7 +56,7 @@ import { bus } from '../main'
 export default {
     data: ()=>({
     dialog: false,
-    navs: [{onpage: false,name:'Home', link:'/'}, {onpage: false,name:'About Us', link:'/about'}, {onpage: false,name:'Services', link:'/services'}, {onpage: false,name:'Portfolio', link:'/portfolio'}, {onpage: false,name:'Contact', link:'/contact'}]
+    navs: [{onpage: false,name:'Home', link:'/'}, {onpage: false,name:'About Us', link:'/about'}, {onpage: false,name:'Services', link:'/services'}, {onpage: false,name:'Portfolio', link:'/portfolio'},]
     }),
     mounted(){
         bus.$on('changeClass', (data) => {
@@ -75,11 +75,11 @@ header.nav.v-sheet{
     /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
 }
 .cont{
-    width: 35%;
+    width: 25%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-right: 3em;
+    margin-right: 2em;
     overflow: hidden;
 }
 .btn{

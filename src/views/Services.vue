@@ -13,13 +13,13 @@
                             <div class="head">
                                We Build, We Create!
                             </div>
-                            <p class="content mt-5">
+                            <p class="content mt-16">
                               We're a digital Agency passionate about developing responsive and elegant websites, brands and digital products
                             </p>
                         </div>
                     </v-flex>
                     <v-flex xs12 sm6 >
-                        <v-img src="@/assets/draw.png" style="height:509px; " class="mage"></v-img>
+                        <v-img src="@/assets/draw.png" style="height:709px; " class="mage"></v-img>
                     </v-flex>
                 </v-layout>
               </v-container>
@@ -92,7 +92,7 @@
 
      <v-carousel
     cycle
-    height="110vh"
+    height="100vh"
     hide-delimiter-background
     show-arrows-on-hover
 
@@ -100,10 +100,12 @@
   >
     <v-carousel-item v-for="(doc, index) in testimonials" :key="index"
     >
-     <v-card light flat class="caro">
+     <v-card light flat class="caro ">
      
                             
-                        <v-img class="img"  :src="require('@/assets/' + doc.image)"></v-img>
+                       <div>
+                         <v-img class="img"  :src="require('@/assets/' + doc.image)"></v-img>
+                       </div>
                      
                             <v-card-title style="align-item: center;">{{doc.head}}</v-card-title >
                             
@@ -160,7 +162,7 @@ export default {
 
 <style scoped>
 .aboutImage{
-  height: 80vh;
+  height: 70vh;
     background-image: url('../assets/footer.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -259,13 +261,43 @@ color: #454040;
 .caro {
     display: none;
 }
+
+
     @media screen and (max-width: 800px) {
-        .v-image.img{
-         margin: 2em;
-         width: 280px;
-    height:266px;
-    border-radius: 37px;
-}
+
+
+    .aboutImage{
+    height: 110vh;
+      background-image: url('../assets/other.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+.v-image.img{
+        width: 300px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .test{
+        width: 200px;
+    }
+    .overlayParent{
+    padding-left: 1em;
+    height: 94vh;
+  }
+  .about_demlinks{
+    font-size: 1em;
+  }
+  .result_driven{
+    margin-top: 1em;
+  }
+  .result_driven .head{
+    font-size: 1.6em;
+  }
+   .result_driven .content{
+    font-size: 1em;
+  }
+
 .car{
     margin-top: 12em;
     display: none;
@@ -291,19 +323,16 @@ color: #454040;
     }
     .head{
     font-size: 1.9em;
-    text-align: center;
 }
 .about_demlinks{
     font-size: 1.2em;
     text-shadow: 0px 3px 5px rgba(19, 18, 18, 0.295);
     margin-top: 4em;
-    padding-left: 20px;
 }
 .content{
     font-size: 1.2em;
     font-weight: 300;
     width: 400px;   
-    padding-left: 20px;
 }
 .team_heads > .head_meet_teams {
    font-family: montserrat, sans-serif;
@@ -318,11 +347,7 @@ color: #454040;
   background-size: cover;
 
 }
-.mage{
-width: 300px;
-margin-left: 30px;
-margin-top: -30px;
-}
+
 }
 </style>
 

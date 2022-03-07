@@ -12,13 +12,13 @@
                             <div class="head">
                                We Build, We Create!
                             </div>
-                            <p class="content mt-5">
+                            <p class="content mt-16">
                               We're a digital Agency passionate about developing responsive and elegant websites, brands and digital products
                             </p>
                         </div>
                     </v-flex>
                     <v-flex xs12 sm6 >
-                        <v-img src="@/assets/draw.png" style="height:509px;"></v-img>
+                        <v-img src="@/assets/draw.png" style="height:709px;"></v-img>
                     </v-flex>
                 </v-layout>
               </v-container>
@@ -92,7 +92,7 @@ export default {
 
 <style scoped>
 .aboutImage{
-  height: 80vh;
+  height: 70vh;
     background-image: url('../assets/footer.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -119,8 +119,12 @@ export default {
     font-size: 2.9em;
 }
 .content{
-    font-size: 1.2em;
-    font-weight: 300;
+     font-size: 25px;
+  font-weight: 500;
+  font-family: montserrat, sans-serif;
+  color: rgba(255, 255, 255, 1);
+ margin-top: 4em;
+ margin-bottom: 0.5em;
 }
 
 /* .carousel-3d-container{
@@ -210,7 +214,7 @@ export default {
 @media screen and (max-width: 600px) {
   
   .aboutImage{
-    height: 100vh;
+    height: 110vh;
       background-image: url('../assets/other.png');
   background-position: center;
   background-repeat: no-repeat;
