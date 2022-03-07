@@ -1,27 +1,30 @@
 <template>
     <div>
-         <div class="overlayParent">
+        <div class="aboutImage">
+        <div class="overlayParent">
              <v-container class="">
                 <v-layout row wrap>
                     <v-flex xs12 sm6>
                         <div class="about_demlinks ">
-                            OUR SERVICES
+                            PORTFOLIO
                         </div>
                         <div class="result_driven">
                             <div class="head">
                                We Build, We Create!
                             </div>
-                            <p class="content mt-5">
+                            <p class="content mt-16">
                               We're a digital Agency passionate about developing responsive and elegant websites, brands and digital products
                             </p>
                         </div>
                     </v-flex>
                     <v-flex xs12 sm6 >
-                        <v-img src="@/assets/draw.png" style="height:509px;"></v-img>
+                        <v-img src="@/assets/draw.png" style="height:709px; " class="mage"></v-img>
                     </v-flex>
                 </v-layout>
               </v-container>
         </div>
+    </div>
+
         <div class="meet_team">
        <div class="team_heads text-center">
          <div class="head_meet_teams">Our <span class="TeamStyle" >Portfolio</span></div>
@@ -33,9 +36,9 @@
     <div class="port">
     <v-container 
     >
-    <v-layout row wrap justify-center>
-    <v-flex md4 v-for="(doc, index) in portfolio" :key="index">
-             <v-img class="img"  :src="require('@/assets/' + doc.image)" style="width:300px;height:300px;"></v-img>
+    <v-layout row wrap justify-space-around>
+    <v-flex md2 v-for="(doc, index) in portfolio" :key="index" class="mobil">
+             <v-img class="img"  :src="require('@/assets/' + doc.image)" style="width:300px;height:300px; margin-left:10px;"></v-img>
                      
                             <v-card-title >{{doc.head}}</v-card-title >
                             
@@ -77,9 +80,10 @@ export default {
 
 <style scoped>
 .aboutImage{
-  height: 80vh;
+  height: 70vh;
     background-image: url('../assets/footer.png');
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -100,9 +104,17 @@ export default {
     margin-top: 4em;
 
 }
+.content{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #FFFFFF;
+
+text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 .head{
     font-size: 2.9em;
 }
+
 .team_heads{
   margin-top: 8em;
    margin-bottom: 5em;
@@ -124,11 +136,36 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
-v-img.img{
-        width: 300px;
-    }
+    .aboutImage{
+    height: 110vh;
+      background-image: url('../assets/other.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
     .test{
         width: 200px;
     }
+    .overlayParent{
+    padding-left: 1em;
+    height: 94vh;
+  }
+  .about_demlinks{
+    font-size: 1em;
+  }
+  .result_driven{
+    margin-top: 1em;
+  }
+  .result_driven .head{
+    font-size: 1.6em;
+  }
+   .result_driven .content{
+    font-size: 1em;
+  }
+  .mobil{
+      
+      margin-left: 30px;
+  }
     }
 </style>
