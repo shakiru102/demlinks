@@ -98,9 +98,7 @@
          <v-container class="">
             <v-layout row wrap>
               <v-flex xs12 sm6>
-                <v-card class="card-left mt-16">
-                  <v-img src="@/assets/group.png" class="mobile"></v-img>
-                </v-card>
+                  <v-img src="@/assets/offer.png" class=" mt-16 card-left"></v-img>
               </v-flex>
               <v-flex xs12 sm6>
                 <div class="card-title">Web Design & Development</div>
@@ -136,9 +134,9 @@
                 </div>
             </v-flex>
             <v-flex xs sm6>
-              <v-card class="card-right mt-16">
-                  <v-img  src="@/assets/business-branding.png"></v-img>
-                </v-card>
+              
+                  <v-img  src="@/assets/brand.png" class="mt-16 card-right"></v-img>
+                
             </v-flex>
           </v-layout>
         </v-container>
@@ -148,11 +146,11 @@
             <v-layout row wrap>
               <v-flex xs12 sm6>
                 <v-card class="card-left mt-16">
-                  <v-img  src="@/assets/home-automation.png"></v-img>
+                  <v-img  src="@/assets/hero-image.jpeg"></v-img>
                 </v-card>
               </v-flex>
               <v-flex xs12 sm6>
-                <div class="card-title">Home Automation</div>
+                <div class="card-title">Co-working Space</div>
                 <div class="card-content">
                   We offer proficient automation and software solutions for everyone who desires innovation, luxury, convenient and full-fledge support for his dormitory/company.
                 </div>
@@ -172,7 +170,7 @@
        <v-container class="">
           <v-layout row wrap>
             <v-flex xs sm6>
-              <div class="card-title-two">CCTV/Remote Video Monitoring</div>
+              <div class="card-title-two">Tech Talent Incubation</div>
                 <div class="card-content-two ">
                   We are expert in providing remote security to anywhere depending on clients choice using sophisticated and updated technology.
                 </div>
@@ -424,22 +422,21 @@ margin-bottom: 1em;
   background: linear-gradient(110.26deg, #F2A839 40.75%, #F4743B 108.81%);
  margin-top: 4em;
  }
-.v-card.card-left{
-  width: 251px;
+.card-left{
+  width: 337px;
 height: 274px;
-border-radius: 27px;
-transform: rotate(-18.09deg);
-margin-left: 5em;
-box-shadow: 8px 8px #9B4C0E;
+
+margin-left: 3em;
+
 
 }
-.v-card.card-right{
+.card-right{
   width: 251px;
 height: 274px;
 border-radius: 27px;
-transform: rotate(30deg);
+
 margin: auto;
-box-shadow: 8px 8px #9B4C0E;
+
 }
 .card-title{
   font-family: Montserrat;

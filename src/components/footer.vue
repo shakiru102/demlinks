@@ -67,7 +67,7 @@
                </v-flex>
                <v-flex xs12 sm6 >
                   <v-container class="move">
-                    <v-row><v-col><div class="demTechs">Demlinks Technology</div></v-col></v-row>
+                    <v-row><v-col><div class="demTechs" style="">Demlinks Technology</div></v-col></v-row>
                      <v-row>
                       <v-col v-for=" (nav, index) in footnavs" :key="index" cols="4">
                    <div class="footContTitle mb-4 mt-1">{{nav.title}}</div>
@@ -83,7 +83,7 @@
                          <v-row class="">
                            <v-col>
                               <v-icon color="white">mdi-phone</v-icon>
-                              <span> +23490 212 845 72</span>
+                              <span> <a href="tel:09060548017" style="text-decoration:none; color:white;">+23490 6054 8017</a></span>
                            </v-col>
                            <v-col>
                              <v-icon color="white">mdi-email</v-icon>
@@ -132,6 +132,9 @@ export default {
 </script>
 
 <style scoped>
+.move{
+  
+}
 
 .foot{
   width: 100%;
@@ -213,6 +216,8 @@ transition: all 0.3s ease-in-out;
   font-family: montserrat;
   color: white;
   font-size: 1.7em;
+  padding-top: 10em; padding-left:2em;
+  
 }
 .footContTitle{
 font-family: montserrat;

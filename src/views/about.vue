@@ -73,14 +73,15 @@ export default {
         model: [1, 2, 3, 4, 5, 6],
         compName: 'About Us',
         images: [
-          { name:'Shittu Moshood', skills:'Frontend Developer', img:'IMG-20210828-WA0001.jpg'},
-          { name:'Adebisi Abdullahi', skills:'UI/UX Designer', img:'IMG-20210828-WA0002.jpg'},
-          { name:'Badakin Favour', skills:'Networking, Frontend Developer', img:'silencer.jpg'},
+          { name:'Shittu Moshood', skills:'Frontend Engineer', img:'IMG-20210828-WA0001.jpg'},
+          { name:'Abdullahi Luqman', skills:'Frontend Developer', img:'luqman.jpeg'},
+          { name:'Raji Muhktar', skills:'Project Manager', img:'raj.jpeg'},
           { name:'Oladipupo Oyinkansola', skills:'Backend Developer', img:'IMG-20210828-WA0000.jpg'},
           { name:'Owojori Habbibat', skills:'UI/UX Designer', img: 'IMG-20210827-WA0004.jpg'},
-          { name:'Tiamiyu Mubarak', skills:'UI/UX Designer', img: 'mubarak.jpg'},
+          { name:'Tiamiyu Mubarak', skills:'UI/UX Designer', img: 'mubby.jpg'},
           { name:'Olarinde Beulah', skills:'Content Writer', img: 'beulah.jpg'},
-          { name:'Shekoni Shakiru', skills:'Software Developer', img: 'shakiru.jpg'}
+          { name:'Shekoni Shakiru', skills:'Software Developer', img: 'shakir.jpg'},
+          { name:'Adeleke Taofeeq', skills:'Intern', img: 'thev.jpeg'}
           ]
     }),
     mounted () {
