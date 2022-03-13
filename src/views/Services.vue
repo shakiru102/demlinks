@@ -141,12 +141,12 @@ export default {
    heights: '40px',
    widths: '130px',
    testimonials: [
-     {image: 'Rectangle.png', head: 'Web design and Development', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
-     {image: 'Rectangle.png', head: 'Co-working space', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
-     {image: 'Rectangle.png', head: 'Software development', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
+     {image: 'offer.png', head: 'Web design and Development', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
+     {image: 'hero-image.jpeg', head: 'Co-working space', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
+     {image: 'business-branding.png', head: 'Software development', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
      {image: 'Rectangle.png', head: 'UI/UX design', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
      {image: 'Rectangle.png', head: 'Graphics design', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
-     {image: 'Rectangle.png', head: 'Business branding', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
+     {image: 'brand.png', head: 'Business branding', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
      {image: 'Rectangle.png', head: 'Internship and training', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
       {image: 'Rectangle.png', head: 'General I.T consultancy', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
    
@@ -352,7 +352,7 @@ color: #454040;
     }
     .v-image.mage{
       width: 400px;
-      height: 609;
+      height: 609px;
     }
 
 }
