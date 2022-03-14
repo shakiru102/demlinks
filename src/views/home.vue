@@ -36,13 +36,13 @@
               Our <span class="headTwo">Story</span>
             </div>
             <div class="text-center">
-              <img  class="imgline" src="@/assets/stroke.png" alt="">
+              <img  class="imgline " src="@/assets/stroke.png" alt="">
             </div>
           </v-flex>
           <v-flex xs12 sm6>
             <!-- <v-card 
              class="ourstory-img" > -->
-              <v-img  src="@/assets/isolation.png" class="ourstory-img"></v-img>
+              <v-img  src="@/assets/isolation.png" class="ourstory-img"  style=""></v-img>
             <!-- </v-card> -->
           </v-flex>
           <v-flex xs12 sm6>
@@ -145,7 +145,10 @@
          <v-container class="">
             <v-layout row wrap>
               <v-flex xs12 sm6>
-                <v-card class="card-left mt-16">
+                <v-card class="card-left mt-16 hidden-sm-and-down" style="border-radius: 20px; ">
+                  <v-img  src="@/assets/hero-image.jpeg"></v-img>
+                </v-card>
+                <v-card class="card-left mt-16 hidden-md-and-up mx-auto" style="border-radius: 20px; height:200px; width:250px;">
                   <v-img  src="@/assets/hero-image.jpeg"></v-img>
                 </v-card>
               </v-flex>
@@ -563,10 +566,9 @@ line-height: 30px;
    height:250px;
    left: 1em;
 }
-  .v-card.ourstory-img{
-    width: 290px;
-    height: 100px;
-    margin: 3em auto;
+  .ourstory-img{
+    height: 250px;
+    margin: 1em auto;
   }
   .story-cont{
     font-size: 1em;
@@ -730,6 +732,7 @@ font-size: 25px;
   }
   .small-btn{
     margin-left: 4em;
+    margin-top: 2px;
   }
   .v-image.img{
     width: 253px;

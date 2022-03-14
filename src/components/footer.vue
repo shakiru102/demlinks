@@ -216,7 +216,7 @@ transition: all 0.3s ease-in-out;
   font-family: montserrat;
   color: white;
   font-size: 1.7em;
-  padding-top: 10em; padding-left:2em;
+ ; padding-left:2em;
   
 }
 .footContTitle{
