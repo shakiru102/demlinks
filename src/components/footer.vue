@@ -133,7 +133,7 @@ export default {
 
 <style scoped>
 .move{
-  
+  padding-top: 160px;
 }
 
 .foot{
@@ -216,7 +216,7 @@ transition: all 0.3s ease-in-out;
   font-family: montserrat;
   color: white;
   font-size: 1.7em;
- ; padding-left:2em;
+ ; padding-left:em;
   
 }
 .footContTitle{

@@ -70,8 +70,8 @@ export default {
              test: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.'},
             {image:'Rectangle.png', head: 'Shopmeco',
              test: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.'},
-             {image:'Rectangle.png', head: 'High School Manager',
-             test: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.'},
+             {image:'hsm.jpeg', head: 'High School Manager',
+             test: 'High School Master is an education based website application built for secondary schools that provides a cumulative database for school records that eases their administrative burdens.'},
    ]
     })
 }

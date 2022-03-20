@@ -71,9 +71,9 @@
                             <v-flex>
                             <p>{{doc.testimonial}}</p>
                             </v-flex>
-                            <v-flex>
+                            <!-- <v-flex>
                             <p style="margin-top:-40px;">{{doc.testimonial}}</p>
-                            </v-flex>
+                            </v-flex> -->
 
                             </v-layout>
                         
@@ -141,7 +141,7 @@ export default {
    heights: '40px',
    widths: '130px',
    testimonials: [
-     {image: 'offer.png', head: 'Web design and Development', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
+     {image: 'offer.png', head: 'Web design and Development', testimonial: 'We create exceptionally high performing, professional custom apps and websites with unique, catchy interfaces and functional designs.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
      {image: 'hero-image.jpeg', head: 'Co-working space', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
      {image: 'business-branding.png', head: 'Software development', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
      {image: 'Rectangle.png', head: 'UI/UX design', testimonial: 'We are proficient in designing world class website to suit your business and taste. we also manage your website to beome the most displayed when anythng related to what you do is being searched for.', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
