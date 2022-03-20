@@ -64,7 +64,7 @@
                   Mission
                 </div>
                 <div class="mission-vision-content">
-                 To create a society for individuals with great Mindset and make there dreams a reality.
+                 To create a society for individuals with great Mindsets and make there dreams a reality.
                 </div>
               </v-card-text>
             </v-card>
@@ -76,7 +76,7 @@
                   Vision
                 </div>
                 <div class="mission-vision-content">
-                 Exercitation veniam conse quat nostrud amet.
+                 To be a global name in providing the best and unique I.T solutions that add values to business and individual.
                 </div>
               </v-card-text>
             </v-card>
@@ -98,7 +98,7 @@
          <v-container class="">
             <v-layout row wrap>
               <v-flex xs12 sm6>
-                  <v-img src="@/assets/offer.png" class=" mt-16 card-left"></v-img>
+                  <v-img src="@/assets/offer1.png" class=" mt-16 card-left"></v-img>
               </v-flex>
               <v-flex xs12 sm6>
                 <div class="card-title">Web Design & Development</div>
@@ -141,7 +141,7 @@
           </v-layout>
         </v-container>
       </div>
-       <div class="bg">
+       <!-- <div class="bg">
          <v-container class="">
             <v-layout row wrap>
               <v-flex xs12 sm6>
@@ -168,8 +168,8 @@
               </v-flex>
             </v-layout>
           </v-container>
-      </div>
-           <div class="my-16">
+      </div> -->
+           <!-- <div class="my-16">
        <v-container class="">
           <v-layout row wrap>
             <v-flex xs sm6>
@@ -200,7 +200,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </div>
+      </div> -->
       <div class="headOne  text-center">
               Testim<span class="headTwo">onials</span>
             <div class="text-center">
@@ -285,8 +285,8 @@ export default {
    widths: '130px',
    testimonials: [
      {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
-     {image: 'testimony 2.png', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Akanmu Samad', info: 'CEO, SamadVisuals'},
-     {image: 'testimony 1.png', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Salaudeen Tawab', info: 'CEO, Frit Publications'}
+     {image: 'testimony 2.png', testimonial: 'Demlinks technologies team are easy to work with, highly responsive,proactive, professional, reliable, and deliver great results. It has been fantastic working with the team.', name: 'Akanmu Samad', info: 'CEO, SamadVisuals'},
+     {image: 'testimony 1.png', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Salaudeen Tawab', info: 'CEO, ShopMeco'}
    ],
    compName: 'Home'
  }),
