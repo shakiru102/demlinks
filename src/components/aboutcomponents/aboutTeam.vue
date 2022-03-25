@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="mb-10">
+      <div class="mb-10 now">
       <div class=" content_head">
             What's different when you work with us?
       </div>
@@ -35,6 +35,12 @@ export default {
 </script>
 
 <style scoped>
+
+
+.now{
+   padding-right: 10em;
+  padding-left: 10em;
+}
 .content_head{
     font-size: 2em;
     font-weight: 600;
@@ -47,6 +53,10 @@ export default {
     padding-left:3em ;
 }
 @media screen and (max-width: 600px) {
+.now{
+   padding-right: 2em;
+  padding-left: 2em;
+}
 .content_head{
     font-size: 1.3em;
     text-align: left;

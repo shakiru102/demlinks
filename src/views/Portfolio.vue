@@ -1,7 +1,7 @@
 <template>
     <div class="total">
         <div class="aboutImage">
-        <div class="overlayParent">
+        <div class="overlayParent now">
              <v-container class="">
                 <v-layout row wrap>
                     <v-flex xs12 sm6>
@@ -79,6 +79,11 @@ export default {
 
 
 <style scoped>
+
+.now{
+   padding-right: 10em;
+  padding-left: 10em;
+}
 .aboutImage{
   height: 70vh;
     background-image: url('../assets/footer.png');
@@ -136,6 +141,11 @@ text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 800px) {
+
+.now{
+   padding-right: 2em;
+  padding-left: 2em;
+}
     .aboutImage{
     height: 110vh;
       background-image: url('../assets/other.png');
