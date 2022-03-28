@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="reveal" class="homeimg">
+    <div v-if="reveal" class="homeimg now">
       <div>
      <v-container class="">
         <v-layout row wrap>
@@ -29,7 +29,7 @@
     </div>
     <!-- </div> -->
     <div id="ourstory" class="others" >
-     <v-container class="mt-16">
+     <v-container class="mt-16 now">
         <v-layout row wrap>
            <v-flex xs12>
             <div  class="headOne move text-center ">
@@ -95,10 +95,10 @@
             </div>
 
       <div class="bg">
-         <v-container class="">
+         <v-container class="now">
             <v-layout row wrap>
               <v-flex xs12 sm6>
-                  <v-img src="@/assets/offer1.png" class=" mt-16 card-left"></v-img>
+                  <v-img src="@/assets/offer1.png" class=" " style="height:492.52px; width:428.24px"></v-img>
               </v-flex>
               <v-flex xs12 sm6>
                 <div class="card-title">Web Design & Development</div>
@@ -118,7 +118,7 @@
           </v-container>
       </div>
       <div class="my-16">
-       <v-container class="">
+       <v-container class="now">
           <v-layout row wrap>
             <v-flex xs sm6>
               <div class="card-title-two">Business Branding</div>
@@ -135,25 +135,30 @@
             </v-flex>
             <v-flex xs sm6>
               
-                  <v-img  src="@/assets/brand.png" class="mt-16 card-right"></v-img>
+                  <v-img  src="@/assets/brand.png" class="mt-16 card-right" style="height:492.52px; width:428.24px"></v-img>
                 
             </v-flex>
           </v-layout>
         </v-container>
       </div>
-       <!-- <div class="bg">
-         <v-container class="">
+       <div class="bg">
+         <v-container class="now">
             <v-layout row wrap>
               <v-flex xs12 sm6>
-                <v-card class="card-left mt-16 hidden-sm-and-down" style="border-radius: 20px; ">
-                  <v-img  src="@/assets/hero-image.jpeg"></v-img>
-                </v-card>
-                <v-card class="card-left mt-16 hidden-md-and-up mx-auto" style="border-radius: 20px; height:200px; width:250px;">
-                  <v-img  src="@/assets/hero-image.jpeg"></v-img>
-                </v-card>
+                <!-- <v-card class="card-left mt-16 hidden-sm-and-down" style="border-radius: 20px; "> -->
+                  <v-img  src="@/assets/offer2.png" style="height:492.52px; width:428.24px"></v-img>
+                <!-- </v-card> -->
+
+
+
+                <!-- <v-card class="card-left mt-16 hidden-md-and-up mx-auto" style="border-radius: 20px; height:200px; width:250px;">
+                  <v-img  src="@/assets/offer2.png"></v-img>
+                </v-card> -->
               </v-flex>
-              <v-flex xs12 sm6>
-                <div class="card-title">Co-working Space</div>
+              <v-flex xs12 sm6 >
+              
+              
+                    <div class="card-title">Co-working Space</div>
                 <div class="card-content">
                   We offer proficient automation and software solutions for everyone who desires innovation, luxury, convenient and full-fledge support for his dormitory/company.
                 </div>
@@ -165,12 +170,13 @@
                       <v-btn :width="widths" class="small-btn" :height="heights"  :color="colors">Learn more.</v-btn>
                   
                 </div>
+            
               </v-flex>
             </v-layout>
           </v-container>
-      </div> -->
-           <!-- <div class="my-16">
-       <v-container class="">
+      </div> 
+           <div class="my-16">
+       <v-container class="now">
           <v-layout row wrap>
             <v-flex xs sm6>
               <div class="card-title-two">Tech Talent Incubation</div>
@@ -186,12 +192,12 @@
                   
                 </div>
             </v-flex>
-            <v-flex xs sm6>
-              <v-card class="card-right mt-16">
-                  <v-img  src="@/assets/CCTV.png"></v-img>
-                </v-card>
+            <v-flex xs sm6 md6>
+              <!-- <v-card class="card-right mt-16"> -->
+                  <v-img  src="@/assets/offer3.png" style="height:492.52px; width:428.24px;" ></v-img>
+                <!-- </v-card> -->
             </v-flex>
-            <v-flex  xs12 sm8>
+            <v-flex  xs12 sm8 md6>
               <div class="card-title-more">
                 Want to know more about our services?
               </div>
@@ -200,7 +206,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </div> -->
+      </div> 
       <div class="headOne  text-center">
               Testim<span class="headTwo">onials</span>
             <div class="text-center">
@@ -259,8 +265,8 @@
               </Slide>
             </Carousel>
             </div>
-     <Foot /> 
     </div>
+     <Foot /> 
   </div>
 </template>
 
@@ -286,7 +292,7 @@ export default {
    testimonials: [
      {image: 'testimony.25c72e7a.svg', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Babalola Abisola', info: 'CEO, ChopBeta'},
      {image: 'testimony 2.png', testimonial: 'Demlinks technologies team are easy to work with, highly responsive,proactive, professional, reliable, and deliver great results. It has been fantastic working with the team.', name: 'Akanmu Samad', info: 'CEO, SamadVisuals'},
-     {image: 'testimony 1.png', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Salaudeen Tawab', info: 'CEO, ShopMeco'}
+    //  {image: 'testimony 1.png', testimonial: 'They are proficient in designing world class website to suit your buisness and i love the taste and feel of my website', name: 'Salaudeen Tawab', info: 'CEO, ShopMeco'}
    ],
    compName: 'Home'
  }),
@@ -299,6 +305,11 @@ export default {
 </script>
 
 <style scoped>
+
+.now{
+   padding-right: 10em;
+  padding-left: 10em;
+}
 .v-image.imgbtn{
   position: relative;
   top: 2em;
@@ -306,6 +317,7 @@ export default {
 }
 .others{
   overflow: hidden;
+ 
 }
 .homeimg{
   height: 100vh;
@@ -314,6 +326,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 
 
 }
@@ -547,6 +560,10 @@ line-height: 30px;
   padding-right: 4em;
 }
 @media screen and (max-width: 800px) {
+.now{
+   padding-right: 0em;
+  padding-left: 0em;
+}
   .homeimg{
   height: 60vh;
 }
@@ -622,6 +639,11 @@ line-height: 30px;
 }
 
 @media screen and (max-width: 600px) {
+
+.now{
+   padding-right: 0em;
+  padding-left: 0em;
+}
   .homeimg{
   width: 100%;
   height: 100vh;

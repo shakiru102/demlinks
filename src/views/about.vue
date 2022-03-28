@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="aboutImage">
+    <div class="aboutImage ">
         <div class="overlayParent">
-             <v-container class="">
+             <v-container class="now">
                 <v-layout row wrap>
                     <v-flex xs12 sm6>
                         <div class="about_demlinks ">
@@ -24,13 +24,13 @@
               </v-container>
         </div>
     </div>
-    <div class="meet_team">
+    <div class="meet_team now">
        <div class="team_heads text-center">
          <div class="head_meet_teams">Meet the <span class="TeamStyle" >Team</span></div>
          <img class="imgline" src="@/assets/stroke.png" alt="">
        </div>
        <carousel-3d 
-       class="adjustable"
+       class="adjustable now"
        style="min-height: 400px;"
        :adjustableHeight="true"
         :autoplay="true">
@@ -59,7 +59,6 @@ import { bus } from '../main'
  import AboutGlance from "@/components/aboutcomponents/aboutGlance"
  import AboutFooter from "@/components/aboutcomponents/aboutfooter"
  import AboutProcess from "@/components/aboutcomponents/aboutprocess"
-
 export default {
    components: {
     Carousel3d,
@@ -87,18 +86,21 @@ export default {
     mounted () {
      bus.$emit('changeClass', this.compName)
  }
-
 }
 </script>
 
 <style scoped>
+
+.now{
+   padding-right: 10em;
+  padding-left: 10em;
+}
 .aboutImage{
   height: 70vh;
     background-image: url('../assets/footer.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .overlayParent{
     background: linear-gradient( to right, #f2a839b4 , #f4733b7c);
@@ -114,7 +116,6 @@ export default {
 }
 .result_driven{
     margin-top: 4em;
-
 }
 .head{
     font-size: 2.9em;
@@ -127,7 +128,6 @@ export default {
  margin-top: 4em;
  margin-bottom: 0.5em;
 }
-
 /* .carousel-3d-container{
   background-color: black;
   padding: 2em 0;
@@ -138,11 +138,9 @@ export default {
  overflow: visible;
  min-height: 400px;
 } */
-
 .carousel-3d-slide{
   border: none;
   background: white;
-
 }
 .imageContents > .avatar_name{
   font-weight: bold;
@@ -157,15 +155,12 @@ export default {
    object-position: top;
    object-fit: cover;
   box-shadow: 0px 3px 10px  rgba(19, 18, 18, 0.404);
-
 }
 .carousel-3d-slide > .imageContents{
   opacity: 0;
 }
-
 .carousel-3d-slide.current > .image{
   opacity: 1;
-
 }
 .carousel-3d-slide.current > .imageContents{
   opacity: 1;
@@ -174,7 +169,6 @@ export default {
 .team_heads{
   margin-top: 8em;
    margin-bottom: 5em;
-
 }
 .team_heads > .head_meet_teams {
    font-family: montserrat, sans-serif;
@@ -185,6 +179,12 @@ export default {
   color: #f2a839;
 }
 @media screen and (max-width: 800px) {
+
+
+.now{
+   padding-right: 2em;
+  padding-left: 2em;
+}
   .about_demlinks{
     font-size: 1.2em;
     text-shadow: 0px 3px 5px rgba(19, 18, 18, 0.295);
@@ -250,14 +250,10 @@ export default {
     max-width: 200px;
     margin: auto 5em;
   min-height: 100%;
-
-
   }
   .carousel-3d-slide > .image{
   height: 70%;
-
   }
-
   .imageContents > .avatar_name{
     font-size: 1em;
   }
@@ -270,5 +266,4 @@ export default {
   top: -0.5em;
 }
 }
-
 </style>

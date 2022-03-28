@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="process">
+      <div class="process now">
            <v-container class="">
               <v-layout row wrap>
                   <v-flex xs12 >
@@ -44,6 +44,11 @@ export default {
 </script>
 
 <style scoped>
+
+.now{
+   padding-right: 5em;
+  padding-left: 10em;
+}
 .process{
     min-height: 100vh;
 }
@@ -123,6 +128,10 @@ ul > li.list::before{
     font-family: poppins;
 }
 @media screen and (max-width: 800px) {
+.now{
+   padding-right: 2em;
+  padding-left: 2em;
+}
     .process{
     min-height: 125vh;
 }
